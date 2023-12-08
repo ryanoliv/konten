@@ -132,3 +132,11 @@ body {
   opacity: 0.4;
   z-index: 1;
 }
+
+.logo {
+  transition: transform 0.6s ease;
+}
+
+.logo:hover {
+  transform: rotate(18deg);
+}

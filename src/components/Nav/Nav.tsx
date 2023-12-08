@@ -1,11 +1,16 @@
+import { useState } from "react";
 import Link from "next/link";
 import styles from "./Nav.module.scss";
+import NavMenu from "./NavMenu";
+import { AnimatePresence } from "framer-motion";
 
 export default function Nav() {
+  const [isActive, setIsActive] = useState(false);
+
   return (
     <div>
-      <div className="container">
-        <div className="flex justify-between items-center">
+      <div className={styles.navWrapper}>
+        <div className="flex justify-between items-center relative">
           <Link href="/">
             <svg
               className="logo"
@@ -25,9 +30,21 @@ export default function Nav() {
               />
             </svg>
           </Link>
-          <div className={styles.hamburgerMenu}>
-            <div className={styles.hamburgerLine}></div>
+          <div
+            onClick={() => {
+              setIsActive(!isActive);
+            }}
+            className={styles.button}
+          >
+            <div
+              className={`${styles.burger} ${
+                isActive ? styles.burgerActive : ""
+              }`}
+            ></div>
           </div>
+          <AnimatePresence mode="wait">
+            {isActive && <NavMenu />}
+          </AnimatePresence>
         </div>
       </div>
     </div>

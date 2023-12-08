@@ -12,7 +12,7 @@ const darkerGrotesque = Darker_Grotesque({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className={`dmSans.className landing-bg`}>
+    <div className={`${dmSans.className} landing-bg`}>
       <header className={"fixed top-0 w-full z-50"}>
         <Nav />
       </header>

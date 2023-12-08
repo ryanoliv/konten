@@ -1,31 +1,137 @@
-.hamburger {
-  &Menu {
-    width: 45px;
-    height: 45px;
-    cursor: pointer;
-  }
+.navWrapper {
+  padding: 4rem;
+}
 
-  &Line {
-    position: relative;
-    top: 40%;
+.navMenuWrapper {
+  background-color: #000;
+  color: var(--clr-white);
+  height: 100vh;
+  width: 30vw;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.button {
+  position: relative;
+  // right: 0;
+  z-index: 10;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  // border: 1px solid white;
+}
+
+.burger {
+  width: 100%;
+  height: 100%;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 35px;
+    margin-inline: auto;
+    background-color: var(--clr-white);
+    // position: relative;
+
+    position: absolute;
+    transform-origin: center;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: var(--clr-white);
 
-    &,
-    &::before {
-      width: 45px;
-      height: 2px;
-      border-radius: 10px;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0.5rem;
-      left: 0;
-
-      background-color: white;
-    }
+    border-radius: 10px;
+    transition: transform 0.6s;
   }
+
+  &::before {
+    top: 42%;
+  }
+
+  &::after {
+    top: 58%;
+  }
+}
+
+.burgerActive {
+  &::before,
+  &::after {
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}
+
+.navMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+  height: 100%;
+
+  padding: 8rem 4rem;
+
+  &Links {
+    // padding: 4.2rem;
+    font-size: 2.75rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.3rem;
+    height: max-content;
+  }
+
+  &Title {
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--clr-white);
+    width: 100%;
+    line-height: 2;
+    margin-bottom: 3rem;
+  }
+}
+
+.link {
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--clr-light-green);
+  }
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-transform: uppercase;
+
+  a {
+    letter-spacing: 1px;
+  }
+}
+
+.svgCurve {
+  position: absolute;
+  top: 0;
+  left: -99px;
+  width: 100px;
+  height: 100%;
+  fill: #000;
+  stroke: none;
+  z-index: 5;
 }
