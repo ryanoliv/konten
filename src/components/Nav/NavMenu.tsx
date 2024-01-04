@@ -48,10 +48,21 @@ export default function NavMenu() {
           })}
         </div>
         <div className={styles.socialLinks}>
-          <Link href="https://www.instagram.com">Instagram</Link>
-          <Link href="https://www.facebook.com">LinkedIn</Link>
-          <Link href="https://www.twitter.com">X.com</Link>
-          <Link href="https://www.linkedin.com">Facebook</Link>
+          <Link target="_blank" href="https://www.instagram.com/konten.dev/">
+            Instagram
+          </Link>
+          <Link
+            target="_blank"
+            href="https://www.linkedin.com/company/kontendev/"
+          >
+            LinkedIn
+          </Link>
+          <Link target="_blank" href="https://twitter.com/kontendev">
+            X.com
+          </Link>
+          <Link target="_blank" href="https://www.facebook.com/konten.dev">
+            Facebook
+          </Link>
         </div>
       </div>
       <Curve />

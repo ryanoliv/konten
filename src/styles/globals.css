@@ -12,6 +12,13 @@
   --clr-grey: #d8dbe2;
 
   --clr-yellow: #cca400;
+
+  --d: 2500ms;
+  --angle: 90deg;
+  --gradX: 100%;
+  --gradY: 50%;
+  --c1: rgba(168, 239, 255, 1);
+  --c2: rgba(168, 239, 255, 0.1);
 }
 
 @font-face {
@@ -34,70 +41,63 @@ body {
   line-height: 1.6;
 }
 
-.heading {
-  font-family: "Franchise", sans-serif;
-  font-size: clamp(8rem, 0.3438rem + 38.2813vw, 38.625rem);
-  letter-spacing: -4px;
-  line-height: 0.9;
-
-  background-image: url("/concrete-texture.jpg");
-  background-size: cover;
-  background-clip: text;
-  color: rgba(255, 255, 255, 0.7);
-  z-index: 5;
-}
-
-.subheading {
-  text-transform: uppercase;
-  font-size: 1.125rem;
-  letter-spacing: 2px;
-  width: 100%;
-  font-weight: 400;
-  z-index: 5;
+.content {
+  position: relative;
+  /* z-index: 2; */
 }
 
 .container {
   padding: 4rem;
   max-width: 90rem;
   margin-inline: auto;
+  /* margin-block: 6rem; */
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
 }
 
 .light-green {
   color: var(--clr-light-green);
 }
 
+/* .sphere {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+
+  z-index: 4;
+} */
+
 .sphere {
   position: absolute;
-  /* top: 50%;
-  right: 22%;
-  z-index: 4; */
-
-  top: 34%;
-  left: 10%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 4;
 }
 
 .landing-bg {
-  /* background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
   position: relative;
   width: 100%;
   min-height: 100vh;
   z-index: 1;
-
-  /* background-image: radial-gradient(
-    135.82% 122.02% at 19.48% 28.71%,
-    #000 0%,
-    #29332c 72.67%,
-    #000 100%
-  ); */
-}
-
-.content {
-  position: relative;
-  z-index: 10;
 }
 
 .landing-bg::before {
@@ -139,4 +139,152 @@ body {
 
 .logo:hover {
   transform: rotate(18deg);
+}
+
+.heading {
+  font-family: "Franchise", sans-serif;
+  font-size: clamp(8rem, 0.3438rem + 38.2813vw, 38.625rem);
+  letter-spacing: -4px;
+  line-height: 0.9;
+
+  background-image: url("/concrete-texture.jpg");
+  background-size: cover;
+  background-clip: text;
+  color: rgba(255, 255, 255, 0.7);
+  z-index: 5;
+
+  /* transform-origin: top left; */
+
+  transition: all 0.3s ease;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+
+.overlay-top {
+  background-color: black;
+  z-index: 50;
+}
+
+.overlay-mid-top {
+  background-color: white;
+  z-index: 49;
+}
+
+.overlay-mid-bot {
+  background-color: black;
+  z-index: 48;
+}
+
+.overlay-bottom {
+  background-color: white;
+  z-index: 47;
+}
+
+.gsap-logo {
+  opacity: 1;
+  z-index: 51;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading,
+.subheading {
+  opacity: 0; /* Start with them invisible */
+}
+
+.sphere {
+  opacity: 0; /* Start with it invisible */
+}
+
+.btn {
+  display: flex;
+  padding: 0.75em 1.5em;
+  border: 1.5px solid var(--clr-light-green);
+  border-radius: 42px;
+  color: var(--clr-light-green);
+  font-weight: bold;
+  gap: 1rem;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  background: transparent;
+  width: max-content;
+  cursor: pointer;
+
+  position: relative;
+  z-index: 10;
+  transition: all 0.6s ease;
+}
+
+.btn img {
+  transition: transform 0.6s ease;
+}
+
+.btn:hover img {
+  transform: rotate(36deg);
+}
+
+.page-title {
+  /* font-family: DM Sans; */
+  font-size: 1.3165rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+
+  display: inline-block;
+
+  position: relative;
+  z-index: 5;
+
+  background: linear-gradient(
+    to bottom,
+    var(--clr-darkest-green),
+    var(--clr-white)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.services-container {
+  border-radius: 1.5rem;
+  background: rgba(40, 119, 66, 0.1);
+  box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1) inset,
+    0px -10px 25px 0px rgba(40, 119, 66, 0.25) inset;
+  backdrop-filter: blur(12.5px);
+  position: relative;
+  z-index: 2;
+}
+
+.services-container > *:not(:nth-last-child(2)) {
+  border-bottom: 2px solid rgba(41, 51, 44, 0.25);
+}
+
+.service {
+  color: var(--clr-white);
+  font-family: "Darker Grotesque";
+  font-size: 6rem;
+  font-weight: 500;
+  line-height: 5.625rem;
+  letter-spacing: -0.25rem;
+}
+
+.services-blur-vector {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  filter: blur(50px);
 }

@@ -1,0 +1,67 @@
+.heroContainer {
+  width: 100%;
+  height: 100vh;
+  // background: black;
+  overflow: hidden;
+
+  // position: relative;
+}
+
+// .heading {
+//   font-family: "Franchise", sans-serif;
+//   font-size: clamp(8rem, 0.3438rem + 38.2813vw, 38.625rem);
+//   letter-spacing: -4px;
+//   line-height: 0.9;
+
+//   background-image: url("/concrete-texture.jpg");
+//   background-size: cover;
+//   background-clip: text;
+//   color: rgba(255, 255, 255, 0.7);
+//   z-index: 5;
+// }
+
+.subheading {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  width: 100%;
+  font-weight: 400;
+  position: relative;
+  z-index: 5;
+}
+
+.maxWHero {
+  max-width: 34.1875rem;
+}
+
+.maxWHero3 {
+  max-width: 42.125rem;
+}
+
+.mainTitle {
+  font-family: Darker Grotesque;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 5.625rem; /* 93.75% */
+  letter-spacing: -0.25rem;
+
+  max-width: 57rem;
+
+  position: relative;
+  z-index: 10;
+}
+
+.secondaryTitle {
+  font-family: Darker Grotesque;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 5.625rem; /* 93.75% */
+  letter-spacing: -0.25rem;
+
+  max-width: 57rem;
+
+  position: relative;
+  z-index: 10;
+}

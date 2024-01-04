@@ -37,6 +37,13 @@ const Sphere: React.FC = () => {
       wireframe: true,
     });
 
+    // const material = new THREE.PointsMaterial({
+    //   size: 0.1,
+    //   color: 0x00cc45,
+    // });
+
+    // const sphere = new THREE.Points(geometry, material);
+
     // Creating a sphere mesh
     const sphere = new THREE.Mesh(geometry, material);
     // sphere.rotation.z = THREE.MathUtils.degToRad(23.5);

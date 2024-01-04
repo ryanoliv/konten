@@ -1,5 +1,6 @@
 .navWrapper {
   padding: 4rem;
+  position: relative;
 }
 
 .navMenuWrapper {
@@ -122,6 +123,12 @@
 
   a {
     letter-spacing: 1px;
+    font-size: 0.875rem;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: var(--clr-light-green);
+    }
   }
 }
 
