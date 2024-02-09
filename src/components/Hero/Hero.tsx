@@ -26,14 +26,14 @@ export default function Hero() {
           start: "-46% top",
           end: "+=150%",
           scrub: true,
-          markers: true,
+          // markers: true,
         },
       });
 
       tl.to(".sphere", { x: "15vw", duration: 0.5, ease: "none" })
         .add(() => {
           ScrollTrigger.create({
-            trigger: "sphere",
+            trigger: ".sphere",
             start: "center center",
             end: "+=100%",
             // pin: true,
