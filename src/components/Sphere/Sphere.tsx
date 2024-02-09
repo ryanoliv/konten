@@ -90,10 +90,17 @@ const Sphere: React.FC = () => {
     animate();
 
     // Resize Handler
+    // const onWindowResize = () => {
+    //   camera.aspect = mount.clientWidth / mount.clientHeight;
+    //   camera.updateProjectionMatrix();
+    //   renderer.setSize(mount.clientWidth, mount.clientHeight);
+    // };
+
+    // Resize Handler
     const onWindowResize = () => {
+      renderer.setSize(mount.clientWidth, mount.clientHeight);
       camera.aspect = mount.clientWidth / mount.clientHeight;
       camera.updateProjectionMatrix();
-      renderer.setSize(mount.clientWidth, mount.clientHeight);
     };
 
     window.addEventListener("resize", onWindowResize);

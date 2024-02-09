@@ -202,9 +202,9 @@ html.lenis {
   opacity: 0; /* Start with them invisible */
 }
 
-.sphere {
-  opacity: 0; /* Start with it invisible */
-}
+/* .sphere {
+  opacity: 0; 
+} */
 
 .btn {
   display: flex;
