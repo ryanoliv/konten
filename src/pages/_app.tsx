@@ -13,25 +13,20 @@ const darkerGrotesque = Darker_Grotesque({
 });
 
 export default function App({ Component, pageProps }: AppProps) {
-  useEffect(() => {
-    const lenis = new Lenis();
+  // useEffect(() => {
+  //   const lenis = new Lenis();
 
-    lenis.on("scroll", (e: any) => {
-      // console.log(e);
-    });
+  //   lenis.on("scroll", (e: any) => {});
 
-    function raf(time: number) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
+  //   function raf(time: number) {
+  //     lenis.raf(time);
+  //     requestAnimationFrame(raf);
+  //   }
 
-    requestAnimationFrame(raf);
+  //   requestAnimationFrame(raf);
 
-    // Cleanup function
-    return () => {
-      // Include any necessary cleanup for Lenis here
-    };
-  }, []);
+  //   return () => {};
+  // }, []);
 
   return (
     <div className={`${dmSans.className} landing-bg`}>
