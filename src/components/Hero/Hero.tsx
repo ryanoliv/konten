@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import styles from "./Hero.module.scss";
 import gsap from "gsap";
 import Hero1 from "./Hero1";
 import Hero2 from "./Hero2";
@@ -19,25 +20,36 @@ export default function Hero() {
         top: "30%",
       });
 
-      const heroContainer = document.querySelector(
-        ".heroContainer"
-      ) as HTMLElement | null;
-
       const tl = gsap.timeline({
         scrollTrigger: {
-          trigger: ".heroContainer",
-          start: "top top",
-          end: () => `+=${heroContainer?.offsetHeight ?? 1500}`,
+          trigger: ".sphere",
+          start: "-46% top",
+          end: "+=150%",
           scrub: true,
-          //   markers: true,
+          markers: true,
         },
       });
 
-      //   This moves the sphere to the right by 300 pixels
-      //   and then lets it scroll up with the rest of the content
-      tl.to(".sphere", { x: 300 })
-        .to(".sphere", { y: 380 })
-        .to(".sphere", { y: 0 });
+      tl.to(".sphere", { x: "15vw", duration: 0.5, ease: "none" })
+        .add(() => {
+          ScrollTrigger.create({
+            trigger: "sphere",
+            start: "center center",
+            end: "+=100%",
+            // pin: true,
+            // pinSpacing: false,
+          });
+        })
+        .to(
+          ".sphere",
+          {
+            y: "75vh",
+            duration: 2,
+            ease: "none",
+            immediateRender: false,
+          },
+          "<"
+        );
     });
   }, []);
   return (
