@@ -1,0 +1,39 @@
+.servicesContainer {
+  border-radius: 1.5rem;
+  background: rgba(40, 119, 66, 0.1);
+  /* box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1) inset,
+      0px -10px 25px 0px rgba(40, 119, 66, 0.25) inset; */
+  box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1) inset,
+    0px -10px 25px 0px rgba(255, 255, 255, 0.3) inset;
+  backdrop-filter: blur(3.5px);
+
+  & > *:not(:nth-last-child(1)) {
+    border-bottom: 2px solid rgba(204, 164, 0, 0.1);
+  }
+
+  & > a:hover {
+    & .service {
+      //   color: var(--clr-yellow);
+      opacity: 1;
+    }
+
+    & img {
+      transform: rotate(45deg);
+    }
+  }
+
+  & > a > img {
+    transition: transform 0.4s ease-in-out;
+  }
+}
+
+.service {
+  color: var(--clr-white);
+  font-family: "Darker Grotesque";
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 5.625rem;
+  letter-spacing: -0.25rem;
+  transition: all 0.4s ease;
+  opacity: 0.6;
+}

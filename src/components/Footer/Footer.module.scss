@@ -1,0 +1,48 @@
+.footer {
+  background-color: var(--clr-darkest-green);
+  position: relative;
+  z-index: 2;
+  padding: 4rem;
+  margin-inline: auto;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.1);
+
+  &Top {
+    padding-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid var(--clr-grey);
+  }
+
+  &Logo {
+    flex: 1;
+  }
+
+  &Links {
+    display: flex;
+    justify-content: center;
+    flex: 2;
+    gap: 2.5rem;
+  }
+
+  &Socials {
+    display: flex;
+    flex: 1;
+    gap: 1rem;
+    justify-content: flex-end;
+  }
+
+  &Bottom {
+    padding-top: 4rem;
+    font-size: 14px;
+    color: var(--clr-grey);
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+}
+
+.logo {
+  font-family: "Franchise", sans-serif;
+  font-size: 42px;
+}

@@ -1,0 +1,36 @@
+.featuredWorkTitle {
+  font-family: "Darker Grotesque";
+  font-size: 96px;
+  line-height: 90px;
+  letter-spacing: -4px;
+}
+
+.featuredWorkText {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.featuredWorkProject {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  & > h3 {
+    font-size: 1rem;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  & > h4 {
+    font-family: "Darker Grotesque";
+    font-size: 64px;
+    line-height: 50px;
+    letter-spacing: -4px;
+  }
+}
+
+.featuredWorkImg {
+  border-radius: 40px;
+}

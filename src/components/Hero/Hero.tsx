@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import styles from "./Hero.module.scss";
 import gsap from "gsap";
 import Hero1 from "./Hero1";
 import Hero2 from "./Hero2";
@@ -16,40 +15,45 @@ export default function Hero() {
       gsap.set(".sphere", {
         xPercent: -50,
         yPercent: -50,
+        scale: 1,
         left: "55%",
-        top: "30%",
+        top: "1000px",
       });
 
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".sphere",
-          start: "-46% top",
-          end: "+=150%",
-          scrub: true,
+          start: "-55% top",
+          end: "+=2200",
+          scrub: 0.5,
           // markers: true,
         },
       });
 
-      tl.to(".sphere", { x: "15vw", duration: 0.5, ease: "none" })
-        .add(() => {
-          ScrollTrigger.create({
-            trigger: ".sphere",
-            start: "center center",
-            end: "+=100%",
-            // pin: true,
-            // pinSpacing: false,
-          });
+      tl.to(".sphere", {
+        x: "20vw",
+        y: "10vh",
+        scale: 1.7,
+        duration: 1.2,
+        ease: "power1.inOut",
+      })
+        // .add(() => {
+        //   ScrollTrigger.create({
+        //     trigger: ".sphere",
+        //     start: "center center",
+        //     end: "+=100%",
+        //   });
+        // })
+        .to(".sphere", {
+          y: "80vh",
+          duration: 2,
+          ease: "power1.inOut",
         })
-        .to(
-          ".sphere",
-          {
-            y: "75vh",
-            duration: 2,
-            ease: "none",
-            immediateRender: false,
-          },
-          "<"
-        );
+        .to(".sphere", {
+          scale: 0.5, // Scale down to a smaller sphere
+          duration: 2,
+          ease: "power1.inOut",
+        });
     });
   }, []);
   return (
