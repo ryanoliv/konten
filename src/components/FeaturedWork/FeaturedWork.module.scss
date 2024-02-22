@@ -18,6 +18,10 @@
   text-transform: uppercase;
   max-width: 550px;
   text-align: end;
+
+  @media (max-width: 550px) {
+    display: none;
+  }
 }
 
 .featuredWorkProject {
@@ -25,11 +29,19 @@
   flex-direction: column;
   gap: 2rem;
 
+  @media (max-width: 550px) {
+    gap: 1rem;
+  }
+
   & > h3 {
     font-size: 1rem;
     line-height: 25px;
     text-transform: uppercase;
     letter-spacing: 2px;
+
+    @media (max-width: 550px) {
+      font-size: 0.8rem;
+    }
   }
 
   & > h4 {
@@ -77,5 +89,9 @@
 
   @media (max-width: 1024px) {
     max-width: 300px;
+  }
+
+  @media (max-width: 550px) {
+    max-width: 200px;
   }
 }

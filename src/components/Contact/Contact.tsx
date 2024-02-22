@@ -83,7 +83,8 @@ export default function Contact() {
         email: "",
       });
     } else {
-      alert("There was a problem submitting the form. Please try again later.");
+      // alert("There was a problem submitting the form. Please try again later.");
+      console.log("Form submission failed");
     }
   }
 
@@ -107,7 +108,7 @@ export default function Contact() {
               setFormData({ ...formData, [e.target.name]: e.target.value })
             }
             className={styles.formInput}
-            placeholder="Click Here To Insert Your Name..."
+            placeholder="Insert Your Name..."
           />
           {formErrors.name && (
             <p className={styles.errorMessage}>{formErrors.name}</p>
@@ -145,7 +146,7 @@ export default function Contact() {
               setFormData({ ...formData, [e.target.name]: e.target.value })
             }
             className={styles.formInput}
-            placeholder="Click Here To Insert Your Email..."
+            placeholder="Insert Your Email..."
           />
           {formErrors.email && (
             <p className={styles.errorMessage}>{formErrors.email}</p>

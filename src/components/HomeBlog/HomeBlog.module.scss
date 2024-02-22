@@ -18,12 +18,20 @@
   text-transform: uppercase;
   max-width: 600px;
   text-align: end;
+
+  @media (max-width: 550px) {
+    display: none;
+  }
 }
 
 .blogGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+
+  @media (max-width: 550px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .blogCard {
@@ -31,4 +39,8 @@
   height: 500px;
   background-color: var(--clr-yellow);
   border-radius: 40px;
+
+  @media (max-width: 550px) {
+    max-width: 100%;
+  }
 }

@@ -8,6 +8,10 @@
     rgba(0, 0, 0, 0.2) 50%,
     transparent 100%
   );
+
+  @media (max-width: 550px) {
+    padding: 4rem 1.5rem;
+  }
 }
 
 .navMenuWrapper {

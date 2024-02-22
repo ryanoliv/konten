@@ -11,7 +11,7 @@ export default function FeaturedWork() {
           A collection of our most recent transformations.
         </p>
       </div>
-      <div className="flex justify-between gap-4 w-full">
+      <div className="flex flex-col md:flex-row lg:flex-row justify-between gap-16 md:gap-4 w-full">
         <Link href="https://alkemi.global" target="_blank">
           <div className={styles.featuredWorkProject}>
             <div className={styles.featuredWorkImgBox}>

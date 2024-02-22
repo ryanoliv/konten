@@ -449,3 +449,15 @@ h6 {
     max-width: 670px;
   }
 }
+
+@media (max-width: 550px) {
+  .container {
+    padding: 4rem 1.5rem;
+  }
+
+  .testimonial-quote {
+    font-size: 1.4rem;
+    letter-spacing: 0px;
+    max-width: 100%;
+  }
+}
