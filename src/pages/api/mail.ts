@@ -28,7 +28,7 @@ export default async function handler(
 
     const data = {
       to: "ryan@konten.dev",
-      // cc: "asher@konten.dev",
+      cc: "asher@konten.dev",
       from: "ryan@konten.dev",
       replyTo: email,
       subject: "New message from Konten Website",

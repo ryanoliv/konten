@@ -83,40 +83,8 @@ export default function Contact() {
         email: "",
       });
     } else {
-      alert("There was a problem submitting the form. Please try again.");
+      alert("There was a problem submitting the form. Please try again later.");
     }
-
-    // setFormData({
-    //   name: "",
-    //   service: "",
-    //   email: "",
-    // });
-
-    // try {
-    //   const response = await fetch("/api/mail", {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //     body: JSON.stringify(formData),
-    //   });
-
-    //   if (!response.ok) {
-    //     throw new Error("Network response was not ok");
-    //   }
-
-    //   const result = await response.json();
-    //   console.log(result);
-
-    //   setShowModal(true);
-    // } catch (error) {
-    //   if (error instanceof Error) {
-    //     console.error("There was an error sending the message:", error.message);
-    //   } else {
-    //     console.error("There was an error sending the message", error);
-    //   }
-    //   alert("There was a problem submitting the form. Please try again.");
-    // }
   }
 
   return (
