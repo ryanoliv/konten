@@ -14,7 +14,7 @@ export default function HomeBlog() {
         <div className={styles.blogCard}></div>
         <div className={styles.blogCard}></div>
         <div className={styles.blogCard}></div>
-        <div className={styles.blogCard}></div>
+        {/* <div className={styles.blogCard}></div> */}
       </div>
     </div>
   );

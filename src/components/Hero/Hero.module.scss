@@ -50,6 +50,10 @@
 
   position: relative;
   z-index: 10;
+
+  @media (max-width: 1024px) {
+    font-size: 5.5rem;
+  }
 }
 
 .secondaryTitle {
@@ -64,4 +68,8 @@
 
   position: relative;
   z-index: 10;
+
+  @media (max-width: 1024px) {
+    font-size: 4.8rem;
+  }
 }

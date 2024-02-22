@@ -1,0 +1,52 @@
+.formTitle {
+  font-family: "Darker Grotesque";
+  font-size: 96px;
+  line-height: 90px;
+  letter-spacing: -4px;
+
+  @media (max-width: 1024px) {
+    font-size: 4rem;
+    line-height: 70px;
+    letter-spacing: -3px;
+  }
+}
+
+.formLabel {
+  font-size: 3.75rem;
+  line-height: 75px;
+  letter-spacing: 3px;
+
+  @media (max-width: 1024px) {
+    font-size: 3.25rem;
+    line-height: 70px;
+    letter-spacing: -3px;
+  }
+}
+
+.formInput,
+.formSelect {
+  background-color: transparent;
+  color: var(--clr-white);
+  width: 50%;
+  border: none;
+  outline: none;
+
+  font-size: 28px;
+  letter-spacing: 3px;
+}
+
+.formInput::placeholder {
+  opacity: 0.4;
+}
+
+.formSelect {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Add custom arrow */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23FFFFFF' d='M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px top 50%; /* Adjust the position as necessary */
+  background-size: 18px; /* Adjust size as necessary */
+  color: var(--clr-white);
+}

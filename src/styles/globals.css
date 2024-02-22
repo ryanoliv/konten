@@ -25,13 +25,22 @@
 html,
 body {
   height: 100%;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden;
 }
 
 body {
   color: var(--clr-white);
   background: var(--clr-darkest-green);
   line-height: 1.6;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .content {
@@ -71,6 +80,10 @@ html.lenis {
 
 .light-green {
   color: var(--clr-light-green);
+}
+
+.yellow {
+  color: var(--clr-yellow);
 }
 
 .sphere {
@@ -305,7 +318,7 @@ html.lenis {
 
 .services-text {
   font-family: "Darker Grotesque";
-  font-size: 59.33px;
+  font-size: 3.7rem;
   line-height: 65px;
   letter-spacing: -4px;
   max-width: 630px;
@@ -313,7 +326,7 @@ html.lenis {
 
 .services-text-dev {
   font-family: "Darker Grotesque";
-  font-size: 59.33px;
+  font-size: 3.7rem;
   line-height: 65px;
   letter-spacing: -4px;
   max-width: 695px;
@@ -380,27 +393,6 @@ h6 {
   /* color: var(--clr-yellow); */
 }
 
-.form-label {
-  font-size: 59px;
-  letter-spacing: 3px;
-}
-
-.form-input,
-.form-select {
-  background-color: transparent;
-  color: var(--clr-yellow);
-  width: 50%;
-  border: none;
-  outline: none;
-
-  font-size: 24px;
-  letter-spacing: 3px;
-}
-
-.form-input::placeholder {
-  opacity: 0.4;
-}
-
 /* Remove default select styling */
 .form-select {
   -webkit-appearance: none;
@@ -443,4 +435,12 @@ h6 {
   fill: var(--clr-white);
   width: 20px;
   height: 20px;
+}
+
+@media (max-width: 1024px) {
+  .testimonial-quote {
+    font-size: 1.75rem;
+    letter-spacing: 2px;
+    max-width: 670px;
+  }
 }

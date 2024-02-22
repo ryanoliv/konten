@@ -5,9 +5,9 @@ export default function UI() {
         <h2 className="page-title">User interface design</h2>
         <p className="services-text">
           Where form meets function. Immerse your{" "}
-          <span className="light-green">audience</span> in out-of-this-world{" "}
-          <span className="light-green">experiences tailored</span> to your{" "}
-          <span className="light-green">brand</span>.
+          <span className="yellow">audience</span> in out-of-this-world{" "}
+          <span className="yellow">experiences tailored</span> to your{" "}
+          <span className="yellow">brand</span>.
         </p>
       </div>
     </div>

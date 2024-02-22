@@ -15,11 +15,21 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Konten | Craft Your Digital Future</title>
+        <title>Konten | Web Development Agency</title>
         <link rel="canonical" href="https://www.konten.dev" />
         <meta
           name="description"
-          content="We harmonise cost-effectiveness, quality, and dedicated support to craft a digital identity that truly embodies your business's story."
+          content="Craft bespoke websites and mobile apps with Konten, your Cape Town-based design and SEO partners. Elevate your brand today."
+        />
+        <link
+          rel="icon"
+          href="/favicon-white.svg"
+          media="(prefers-color-scheme: dark)"
+        />
+        <link
+          rel="icon"
+          href="/favicon-black.svg"
+          media="(prefers-color-scheme: light)"
         />
       </Head>
       <Hero />

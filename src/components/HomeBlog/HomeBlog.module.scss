@@ -3,6 +3,13 @@
   font-size: 96px;
   line-height: 90px;
   letter-spacing: -4px;
+  width: 100%;
+
+  @media (max-width: 1024px) {
+    font-size: 4rem;
+    line-height: 70px;
+    letter-spacing: -3px;
+  }
 }
 
 .blogSubtitle {
@@ -10,16 +17,17 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   max-width: 600px;
+  text-align: end;
 }
 
 .blogGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
 .blogCard {
-  width: 300px;
+  max-width: 350px;
   height: 500px;
   background-color: var(--clr-yellow);
   border-radius: 40px;

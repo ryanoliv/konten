@@ -1,14 +1,23 @@
 .featuredWorkTitle {
   font-family: "Darker Grotesque";
-  font-size: 96px;
+  font-size: 6rem;
   line-height: 90px;
   letter-spacing: -4px;
+  width: 100%;
+
+  @media (max-width: 1024px) {
+    font-size: 4rem;
+    line-height: 70px;
+    letter-spacing: -3px;
+  }
 }
 
 .featuredWorkText {
   font-size: 18px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  max-width: 550px;
+  text-align: end;
 }
 
 .featuredWorkProject {
@@ -25,12 +34,48 @@
 
   & > h4 {
     font-family: "Darker Grotesque";
-    font-size: 64px;
+    font-size: 4rem;
     line-height: 50px;
     letter-spacing: -4px;
+
+    @media (max-width: 1024px) {
+      font-size: 3rem;
+      letter-spacing: -3px;
+    }
   }
+
+  &:hover .featuredWorkLogo {
+    filter: invert(100%);
+  }
+}
+
+.featuredWorkImgBox {
+  position: relative;
+  overflow: hidden;
+  border-radius: 40px;
 }
 
 .featuredWorkImg {
   border-radius: 40px;
+  max-width: 100%;
+  height: auto;
+
+  // @media (max-width: 1024px) {
+  //   max-width: 300px;
+  // }
+}
+
+.featuredWorkLogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: filter 0.2s ease;
+
+  max-width: 100%;
+  height: auto;
+
+  @media (max-width: 1024px) {
+    max-width: 300px;
+  }
 }

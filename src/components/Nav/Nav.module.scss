@@ -14,10 +14,18 @@
   background-color: #000;
   color: var(--clr-white);
   height: 100vh;
-  width: 30vw;
+  width: 550px;
   position: fixed;
   right: 0;
   top: 0;
+
+  @media (max-width: 768px) {
+    width: 400px;
+  }
+
+  @media (max-width: 550px) {
+    width: 85vw;
+  }
 }
 
 .button {
@@ -89,6 +97,14 @@
 
   padding: 8rem 4rem;
 
+  @media (max-width: 768px) {
+    padding: 8rem 2rem;
+  }
+
+  @media (max-width: 550px) {
+    padding: 8rem 2rem 2rem 2rem;
+  }
+
   &Links {
     // padding: 4.2rem;
     font-size: 2.75rem;
@@ -135,6 +151,10 @@
 
     &:hover {
       color: var(--clr-light-green);
+    }
+
+    @media (max-width: 768px) {
+      font-size: 0.75rem;
     }
   }
 }

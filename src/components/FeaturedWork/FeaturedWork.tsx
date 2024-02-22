@@ -5,22 +5,32 @@ import Link from "next/link";
 export default function FeaturedWork() {
   return (
     <div className="container flex flex-col gap-16">
-      <div className="flex justify-between w-full items-end">
+      <div className="flex justify-between gap-6 w-full items-end">
         <h2 className={styles.featuredWorkTitle}>Featured Work</h2>
         <p className={styles.featuredWorkText}>
           A collection of our most recent transformations.
         </p>
       </div>
-      <div className="flex justify-between w-full">
+      <div className="flex justify-between gap-4 w-full">
         <Link href="https://alkemi.global" target="_blank">
           <div className={styles.featuredWorkProject}>
-            <Image
-              src="./work/alkemi.svg"
-              alt="alkemi collective logo"
-              width={635}
-              height={390}
-              className={styles.featuredWorkImg}
-            />
+            <div className={styles.featuredWorkImgBox}>
+              <Image
+                src="./work/alkemi-box.svg"
+                alt="gray rectangle box"
+                width={635}
+                height={390}
+                className={styles.featuredWorkImg}
+              />
+              <Image
+                src="./work/alkemi-logo.svg"
+                alt="alkemi collective logo"
+                width={403}
+                height={143.53}
+                className={styles.featuredWorkLogo}
+              />
+            </div>
+
             <h3 className="flex gap-2">
               Web Development{" "}
               <Image
@@ -36,13 +46,22 @@ export default function FeaturedWork() {
         </Link>
         <Link href="https://hbmedia.io" target="_blank">
           <div className={styles.featuredWorkProject}>
-            <Image
-              src="./work/hbmedia.svg"
-              alt="hb media logo"
-              width={635}
-              height={390}
-              className={styles.featuredWorkImg}
-            />
+            <div className={styles.featuredWorkImgBox}>
+              <Image
+                src="./work/hbmedia-box.svg"
+                alt="blurred gradient box"
+                width={635}
+                height={390}
+                className={styles.featuredWorkImg}
+              />
+              <Image
+                src="./work/hbmedia-logo.svg"
+                alt="hb media logo"
+                width={403.97}
+                height={132.31}
+                className={styles.featuredWorkLogo}
+              />
+            </div>
             <h3 className="flex gap-2">
               UX
               <Image
