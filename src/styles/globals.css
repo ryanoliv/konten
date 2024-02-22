@@ -435,6 +435,11 @@ h6 {
   fill: var(--clr-white);
   width: 20px;
   height: 20px;
+  transition: scale 0.2s ease;
+}
+
+.social-icon:hover {
+  scale: 1.15;
 }
 
 @media (max-width: 1024px) {

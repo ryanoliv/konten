@@ -9,11 +9,11 @@ export default function Footer() {
           <span className={styles.logo}>Konten</span>
         </div>
         <div className={styles.footerLinks}>
-          <Link href="/">Home</Link>
-          <Link href="/">Services</Link>
-          <Link href="/">Portfolio</Link>
-          <Link href="/">Blog</Link>
-          <Link href="/">Contact</Link>
+          <Link href="/#home">Home</Link>
+          <Link href="/#services">Services</Link>
+          <Link href="/#portfolio">Portfolio</Link>
+          <Link href="/#blog">Blog</Link>
+          <Link href="/#contact">Contact</Link>
         </div>
         <div className={styles.footerSocials}>
           <Link target="_blank" href="https://www.facebook.com/konten.dev">

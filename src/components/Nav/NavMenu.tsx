@@ -9,7 +9,7 @@ import Curve from "./Curve";
 const navLinks = [
   {
     title: "Home",
-    href: "/",
+    href: "/#home",
   },
   {
     title: "Services",
@@ -21,7 +21,7 @@ const navLinks = [
   },
   {
     title: "Blog",
-    href: "/#blog",
+    href: "/#home-blog",
   },
   {
     title: "Contact",

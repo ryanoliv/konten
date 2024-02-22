@@ -11,7 +11,7 @@ export default function Services() {
           className={`flex flex-col p-6 ${styles.servicesContainer} relative`}
         >
           <Link
-            href="/ux-design"
+            href="/#ux-design"
             className="flex py-4 justify-between items-center w-full"
           >
             <h3 className={styles.service}>User Experience Design</h3>
@@ -23,7 +23,7 @@ export default function Services() {
             />
           </Link>
           <Link
-            href="/ui-design"
+            href="/#ui-design"
             className="flex py-4 justify-between items-center w-full"
           >
             <h3 className={styles.service}>User Interface Design</h3>
@@ -35,7 +35,7 @@ export default function Services() {
             />
           </Link>
           <Link
-            href="/development"
+            href="/#development"
             className="flex py-4 justify-between items-center w-full"
           >
             <h3 className={styles.service}>Web Development</h3>
@@ -47,7 +47,7 @@ export default function Services() {
             />
           </Link>
           <Link
-            href="/development"
+            href="/#development"
             className="flex py-4 justify-between items-center w-full"
           >
             <h3 className={styles.service}>App Development</h3>
@@ -59,7 +59,7 @@ export default function Services() {
             />
           </Link>
           <Link
-            href="/seo"
+            href="/#seo"
             className="flex py-4 justify-between items-center w-full"
           >
             <h3 className={styles.service}>SEO</h3>

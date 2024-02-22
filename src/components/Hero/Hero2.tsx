@@ -17,7 +17,7 @@ export default function Hero2() {
             Story.
           </p>
 
-          <Link href="/" className="btn">
+          <Link href="/#portfolio" className="btn">
             See Our Work
             <Image
               src="./btn-logo.svg"

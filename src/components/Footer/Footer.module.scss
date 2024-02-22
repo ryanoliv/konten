@@ -23,6 +23,14 @@
     justify-content: center;
     flex: 2;
     gap: 2.5rem;
+
+    & a {
+      transition: color 0.4s ease;
+
+      &:hover {
+        color: var(--clr-light-green);
+      }
+    }
   }
 
   &Socials {
@@ -39,6 +47,11 @@
     display: flex;
     gap: 2rem;
     justify-content: center;
+
+    & a {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
   }
 }
 

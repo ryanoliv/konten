@@ -16,7 +16,7 @@ export default function CTA() {
         <p className="cta-subtitle">
           Let&apos;s Build Something Remarkable Together.
         </p>
-        <Link href="/" className="btn">
+        <Link href="/#contact" className="btn">
           Get in Touch
           <Image
             src="./btn-logo.svg"

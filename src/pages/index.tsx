@@ -32,19 +32,37 @@ export default function Home() {
           media="(prefers-color-scheme: light)"
         />
       </Head>
-      <Hero />
-      <Services />
-      <div className="dark-bg">
-        <UX />
-        <UI />
-        <Development />
-        <SEO />
+      <div id="home">
+        <Hero />
       </div>
-      <FeaturedWork />
+      <div id="services">
+        <Services />
+      </div>
+      <div className="dark-bg">
+        <div id="ux-design">
+          <UX />
+        </div>
+        <div id="ui-design">
+          <UI />
+        </div>
+        <div id="development">
+          <Development />
+        </div>
+        <div id="seo">
+          <SEO />
+        </div>
+      </div>
+      <div id="portfolio">
+        <FeaturedWork />
+      </div>
       <Testimonials />
       <CTA />
-      <HomeBlog />
-      <Contact />
+      <div id="home-blog">
+        <HomeBlog />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
     </>
   );
 }
