@@ -94,7 +94,7 @@ export default function Contact() {
       <form
         onSubmit={handleSubmit}
         action=""
-        className="flex flex-col gap-8 relative"
+        className="flex flex-col gap-16 md:gap-8 relative items-end"
       >
         <div className="flex justify-between items-end w-full border-b border-slate-500 relative">
           <label htmlFor="label" className={styles.formLabel}>

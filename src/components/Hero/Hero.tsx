@@ -11,13 +11,16 @@ export default function Hero() {
     import("gsap/ScrollTrigger").then(({ default: ScrollTrigger }) => {
       gsap.registerPlugin(ScrollTrigger);
 
+      // Media query for mobile devices
+      const isMobile = window.innerWidth < 768;
+
       // Initialize the sphere on-screen
       gsap.set(".sphere", {
         xPercent: -50,
         yPercent: -50,
         scale: 1,
         left: "55%",
-        top: "1000px",
+        top: isMobile ? "600px" : "900px",
       });
 
       const tl = gsap.timeline({
@@ -37,13 +40,7 @@ export default function Hero() {
         duration: 1.2,
         ease: "power1.inOut",
       })
-        // .add(() => {
-        //   ScrollTrigger.create({
-        //     trigger: ".sphere",
-        //     start: "center center",
-        //     end: "+=100%",
-        //   });
-        // })
+
         .to(".sphere", {
           y: "80vh",
           duration: 2,

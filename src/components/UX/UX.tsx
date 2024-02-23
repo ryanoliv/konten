@@ -5,7 +5,7 @@ export default function UX() {
     "We put your user at the centre of our design process and make every interaction meaningful.";
   return (
     <div className="container">
-      <div className="flex flex-col gap-10 py-32 items-center">
+      <div className="flex flex-col gap-10 py-18 md:py-32 items-center">
         <h2 className="page-title">User Experience Design</h2>
         <OpacityParagraph paragraphText={paragraphText} />
       </div>

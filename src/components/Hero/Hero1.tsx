@@ -41,6 +41,7 @@ export default function Hero1() {
     }).to(
       ".loading-circle, loading-logo",
       {
+        // y: "-100%",
         opacity: 0,
         duration: 0.5,
         ease: "power2.inOut",

@@ -61,6 +61,17 @@ const Sphere: React.FC = () => {
 
     animate();
 
+    // Adjust sphere size based on window width
+    const updateSphereSize = () => {
+      const width = window.innerWidth;
+      const sphereScale = width < 768 ? 0.7 : width < 1024 ? 1 : 1; // Example breakpoints
+      sphere.scale.set(sphereScale, sphereScale, sphereScale);
+    };
+
+    // Call updateSphereSize on mount and when window resizes
+    updateSphereSize();
+    window.addEventListener("resize", updateSphereSize);
+
     // Resize Handler
     const onWindowResize = () => {
       camera.aspect = window.innerWidth / window.innerHeight;
@@ -73,6 +84,7 @@ const Sphere: React.FC = () => {
     // Cleanup function
     return () => {
       window.removeEventListener("resize", onWindowResize);
+      window.removeEventListener("resize", updateSphereSize);
       geometry.dispose();
       material.dispose();
       pointLight.dispose();

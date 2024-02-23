@@ -419,8 +419,8 @@ h6 {
 
 .social-icon {
   fill: var(--clr-white);
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   transition: scale 0.2s ease;
 }
 
