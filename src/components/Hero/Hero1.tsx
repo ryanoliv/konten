@@ -91,7 +91,7 @@ export default function Hero1() {
             />
           </svg>
         </svg>
-        <div className="container flex flex-col justify-center items-center min-h-screen relative">
+        <div className="container-hero flex flex-col justify-center items-center min-h-screen relative">
           <span className={styles.mainHeading}>Konten</span>
           <span className={styles.subheading}>
             Where <span className="light-green">Visionary</span> Tech Meets{" "}

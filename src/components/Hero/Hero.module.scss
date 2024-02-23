@@ -3,11 +3,15 @@
   height: 100vh;
   overflow: hidden;
   position: relative;
+
+  @media (max-width: 550px) {
+    height: 100dvh;
+  }
 }
 
 .mainHeading {
   font-family: "Franchise", sans-serif;
-  font-size: clamp(8rem, 0.3438rem + 38.2813vw, 38.625rem);
+  font-size: clamp(8rem, 1.3438rem + 38.2813vw, 38.625rem);
   letter-spacing: -4px;
   line-height: 0.9;
 
