@@ -1,14 +1,13 @@
+import OpacityParagraph from "../OpacityParagraph/OpacityParagraph";
+
 export default function UI() {
+  const paragraphText =
+    "Where form meets function. Immerse your audience in out-of-this-world experiences tailored to your brand.";
   return (
     <div className="container">
-      <div className="flex flex-col gap-10 text-right items-end">
+      <div className="flex flex-col gap-10 py-32 items-center">
         <h2 className="page-title">User interface design</h2>
-        <p className="services-text">
-          Where form meets function. Immerse your{" "}
-          <span className="yellow">audience</span> in out-of-this-world{" "}
-          <span className="yellow">experiences tailored</span> to your{" "}
-          <span className="yellow">brand</span>.
-        </p>
+        <OpacityParagraph paragraphText={paragraphText} />
       </div>
     </div>
   );

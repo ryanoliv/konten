@@ -11,7 +11,7 @@
   "dependencies": {
     "@gsap/react": "^2.1.0",
     "@sendgrid/mail": "^8.1.1",
-    "@studio-freight/lenis": "^1.0.29",
+    "@studio-freight/lenis": "^1.0.37",
     "@types/gsap": "^3.0.0",
     "framer-motion": "^10.16.15",
     "gsap": "^3.12.5",

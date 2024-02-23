@@ -1,14 +1,15 @@
+import styles from "./CTA.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 
 export default function CTA() {
   return (
     <div className="container">
-      <div className="marquee-container">
-        <h2 className="cta-title marquee">
+      <div className={styles.marqueeContainer}>
+        <h2 className={styles.marqueeText}>
           Ready to Transform Your Digital Presence?&nbsp;
         </h2>
-        <h2 className="cta-title marquee">
+        <h2 className={styles.marqueeText}>
           Ready to Transform Your Digital Presence?&nbsp;
         </h2>
       </div>

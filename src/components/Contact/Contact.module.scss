@@ -112,3 +112,12 @@
     }
   }
 }
+
+.formInput:-webkit-autofill,
+.formInput:-webkit-autofill:focus,
+.formInput:-webkit-autofill:hover {
+  // border: 1px solid var(--clr-light-green);
+  -webkit-text-fill-color: var(--clr-white);
+  -webkit-box-shadow: 0 0 0px 1000px var(--clr-darkest-green) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}

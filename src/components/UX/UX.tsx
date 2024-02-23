@@ -1,14 +1,13 @@
+import OpacityParagraph from "../OpacityParagraph/OpacityParagraph";
+
 export default function UX() {
+  const paragraphText =
+    "We put your user at the centre of our design process and make every interaction meaningful.";
   return (
     <div className="container">
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-10 py-32 items-center">
         <h2 className="page-title">User Experience Design</h2>
-        <p className="services-text">
-          We put your <span className="yellow">user</span> at the{" "}
-          <span className="yellow">centre</span> of our{" "}
-          <span className="yellow">design process</span> and make every
-          interaction meaningful.
-        </p>
+        <OpacityParagraph paragraphText={paragraphText} />
       </div>
     </div>
   );

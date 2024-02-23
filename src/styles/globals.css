@@ -26,6 +26,7 @@ html,
 body {
   height: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -319,9 +320,23 @@ html.lenis {
 .services-text {
   font-family: "Darker Grotesque";
   font-size: 3.7rem;
-  line-height: 65px;
+  line-height: 60px;
   letter-spacing: -4px;
   max-width: 630px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.word {
+  margin-right: 12px;
+  margin-top: 12px;
+  position: relative;
+}
+
+.word-shadow {
+  position: absolute;
+  opacity: 0.1;
 }
 
 .services-text-dev {
@@ -361,36 +376,6 @@ h6 {
   line-height: 40px;
   max-width: 880px;
   text-align: center;
-}
-
-@keyframes slideText {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.marquee-container {
-  display: flex;
-  /* overflow: hidden; */
-  min-width: 6490px;
-}
-
-.marquee {
-  display: inline-block;
-  white-space: nowrap;
-  animation: slideText 25s linear infinite;
-  min-width: 3245px;
-}
-
-.cta-title {
-  font-family: "Darker Grotesque";
-  font-size: 200px;
-  letter-spacing: -7px;
-  color: var(--clr-light-green);
-  /* color: var(--clr-yellow); */
 }
 
 /* Remove default select styling */
@@ -459,5 +444,31 @@ h6 {
     font-size: 1.4rem;
     letter-spacing: 0px;
     max-width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .services-text {
+    font-size: 2.8rem;
+    line-height: 40px;
+    letter-spacing: -3px;
+    max-width: 100%;
+  }
+
+  .word {
+    margin-right: 11px;
+  }
+}
+
+@media (max-width: 436px) {
+  .page-title {
+    font-size: 1.1rem;
+    letter-spacing: 0.15rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 4rem 1rem;
   }
 }

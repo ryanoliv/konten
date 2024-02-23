@@ -30,6 +30,10 @@
     @media (max-width: 500px) {
       width: 20px;
     }
+
+    @media (max-width: 400px) {
+      width: 15px;
+    }
   }
 }
 
@@ -48,8 +52,12 @@
   }
 
   @media (max-width: 550px) {
-    font-size: 1.95rem;
+    font-size: 1.85rem;
     letter-spacing: -1px;
     opacity: 1;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 1.65rem;
   }
 }

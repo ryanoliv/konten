@@ -1,14 +1,13 @@
+import OpacityParagraph from "../OpacityParagraph/OpacityParagraph";
+
 export default function SEO() {
+  const paragraphText =
+    "Stand out from the crowd. Propel your brand to the forefront of search engines with analytics-driven strategies.";
   return (
     <div className="container">
-      <div className="flex flex-col gap-10 text-right items-end">
+      <div className="flex flex-col gap-10 py-32 items-center">
         <h2 className="page-title">SEO</h2>
-        <p className="services-text">
-          <span className="yellow">Stand out</span> from the crowd. Propel your
-          brand to the forefront of{" "}
-          <span className="yellow">search engines</span> with analytics-driven{" "}
-          <span className="yellow">strategies</span>.
-        </p>
+        <OpacityParagraph paragraphText={paragraphText} />
       </div>
     </div>
   );

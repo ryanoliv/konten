@@ -21,16 +21,6 @@ export default function Home() {
           name="description"
           content="Craft bespoke websites and mobile apps with Konten, your Cape Town-based design and SEO partners. Elevate your brand today."
         />
-        <link
-          rel="icon"
-          href="/favicon-white.svg"
-          media="(prefers-color-scheme: dark)"
-        />
-        <link
-          rel="icon"
-          href="/favicon-black.svg"
-          media="(prefers-color-scheme: light)"
-        />
       </Head>
       <div id="home">
         <Hero />
