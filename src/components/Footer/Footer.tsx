@@ -18,7 +18,7 @@ export default function Footer() {
         <div className={styles.footerSocials}>
           <Link target="_blank" href="https://www.facebook.com/konten.dev">
             <svg
-              className="social-icon"
+              className={styles.socialIcon}
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
             >
@@ -27,7 +27,7 @@ export default function Footer() {
           </Link>
           <Link target="_blank" href="https://www.instagram.com/konten.dev/">
             <svg
-              className="social-icon"
+              className={styles.socialIcon}
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
             >
@@ -36,7 +36,7 @@ export default function Footer() {
           </Link>
           <Link target="_blank" href="https://twitter.com/kontendev">
             <svg
-              className="social-icon"
+              className={styles.socialIcon}
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
             >
@@ -48,7 +48,7 @@ export default function Footer() {
             href="https://www.linkedin.com/company/kontendev/"
           >
             <svg
-              className="social-icon"
+              className={styles.socialIcon}
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
             >

@@ -12,10 +12,17 @@ export default async function handler(
   try {
     const { name, service, email } = req.body;
 
+    // const message = `
+    // Client Name: ${name} \r\n
+    // Client Wants A: ${service} \r\n
+    // Client Email: ${email}
+    // `;
+
     const message = `
-    Name: ${name} \r\n
-    Service: ${service} \r\n
-    Email: ${email}
+    <h1>New Email Just Received From Konten.dev</h1>
+    <p><strong>Client Name:</strong> ${name}</p>
+    <p><strong>Client Wants A:</strong> ${service}</p>
+    <p><strong>Client Email:</strong> ${email}</p>
     `;
 
     console.log(`message: ${message}`);
@@ -32,8 +39,8 @@ export default async function handler(
       from: "ryan@konten.dev",
       replyTo: email,
       subject: "New message from Konten Website",
-      text: message,
-      html: message.replace(/\r\n/g, "<br>"), // Convert newlines to HTML breaks for better email formatting
+      text: message.replace(/<br>/g, "\r\n").replace(/<.*?>/g, ""), // Strip HTML for plain text version
+      html: message, // Use the HTML formatted message
     };
 
     await mail.send(data);

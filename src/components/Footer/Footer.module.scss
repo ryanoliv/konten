@@ -4,7 +4,7 @@
   z-index: 2;
   padding: 4rem;
   margin-inline: auto;
-  border-top: 0.5px solid rgba(255, 255, 255, 0.1);
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
 
   @media (max-width: 550px) {
     padding: 1.5rem;
@@ -17,7 +17,7 @@
     width: 100%;
     border-bottom: 1px solid var(--clr-grey);
 
-    @media (max-width: 550px) {
+    @media (max-width: 768px) {
       flex-direction: column;
       gap: 3rem;
       padding-bottom: 2rem;
@@ -82,4 +82,20 @@
 .logo {
   font-family: "Franchise", sans-serif;
   font-size: 42px;
+}
+
+.socialIcon {
+  fill: var(--clr-white);
+  width: 20px;
+  height: 20px;
+  transition: scale 0.2s ease;
+
+  @media (max-width: 550px) {
+    width: 30px;
+    height: 30px;
+  }
+
+  &:hover {
+    scale: 1.15;
+  }
 }
