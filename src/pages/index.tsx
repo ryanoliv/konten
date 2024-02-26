@@ -15,12 +15,22 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Konten | Web Development Agency</title>
+        <title>Konten | Web and App Development Agency</title>
         <link rel="canonical" href="https://www.konten.dev" />
         <meta
           name="description"
-          content="Craft bespoke websites and mobile apps with Konten, your Cape Town-based design and SEO partners. Elevate your brand today."
+          content="Craft bespoke websites and mobile apps with Konten, your Cape Town-based design and development partners. Elevate your brand today."
         />
+        <meta
+          property="og:title"
+          content="Konten | Web and App Development Agency"
+        />
+        <meta
+          property="og:description"
+          content="Craft bespoke websites and mobile apps with Konten, your Cape Town-based design and development partners. Elevate your brand today."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.konten.dev" />
       </Head>
       <div id="home">
         <Hero />

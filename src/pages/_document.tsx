@@ -27,6 +27,20 @@ export default function Document() {
           color="#00cc45"
         ></link>
         <meta name="msapplication-TileColor" content="#00cc45"></meta>
+        <meta
+          property="og:image"
+          content="https://www.konten.dev/opengraph-image.png"
+        />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="180" />
+        <meta property="og:image:height" content="180" />
+        <meta
+          name="twitter:image"
+          content="https://www.konten.dev/twitter-image.png"
+        />
+        <meta name="twitter:image:type" content="image/png" />
+        <meta name="twitter:image:width" content="180" />
+        <meta name="twitter:image:height" content="180" />
       </Head>
       <body>
         <Main />

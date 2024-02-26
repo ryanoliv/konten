@@ -48,19 +48,32 @@ export default function NavMenu() {
           })}
         </div>
         <div className={styles.socialLinks}>
-          <Link target="_blank" href="https://www.instagram.com/konten.dev/">
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.instagram.com/konten.dev/"
+          >
             Instagram
           </Link>
           <Link
             target="_blank"
+            rel="noopener noreferrer"
             href="https://www.linkedin.com/company/kontendev/"
           >
             LinkedIn
           </Link>
-          <Link target="_blank" href="https://twitter.com/kontendev">
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/kontendev"
+          >
             X.com
           </Link>
-          <Link target="_blank" href="https://www.facebook.com/konten.dev">
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.facebook.com/konten.dev"
+          >
             Facebook
           </Link>
         </div>

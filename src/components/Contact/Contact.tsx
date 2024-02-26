@@ -97,7 +97,7 @@ export default function Contact() {
         className="flex flex-col gap-16 md:gap-8 relative items-end"
       >
         <div className="flex justify-between items-end w-full border-b border-slate-500 relative">
-          <label htmlFor="label" className={styles.formLabel}>
+          <label htmlFor="name" className={styles.formLabel}>
             My Name is
           </label>
           <input
@@ -115,10 +115,11 @@ export default function Contact() {
           )}
         </div>
         <div className="flex justify-between items-end w-full border-b border-slate-500 relative">
-          <label htmlFor="label" className={styles.formLabel}>
+          <label htmlFor="service" className={styles.formLabel}>
             And I Want
           </label>
           <select
+            id="service"
             name="service"
             value={formData.service}
             onChange={(e) =>
@@ -135,7 +136,7 @@ export default function Contact() {
           )}
         </div>
         <div className="flex justify-between items-end w-full border-b border-slate-500 relative">
-          <label htmlFor="label" className={styles.formLabel}>
+          <label htmlFor="email" className={styles.formLabel}>
             Contact Me At
           </label>
           <input

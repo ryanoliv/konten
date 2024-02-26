@@ -11,7 +11,7 @@ export default function Nav() {
     <div>
       <div className={styles.navWrapper}>
         <div className="flex justify-between items-center relative">
-          <Link href="/">
+          <Link href="/" aria-label="Home">
             <svg
               className="logo"
               width="45"
