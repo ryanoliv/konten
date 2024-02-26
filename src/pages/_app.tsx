@@ -2,9 +2,9 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Lenis from "@studio-freight/lenis";
 import HeroBackgroundImg from "@/components/HeroBackgroundImg/HeroBackgroundImg";
+import { DM_Sans, Darker_Grotesque } from "next/font/google";
 import Nav from "@/components/Nav/Nav";
 import Footer from "@/components/Footer/Footer";
-import { DM_Sans, Darker_Grotesque } from "next/font/google";
 import { useEffect } from "react";
 
 const dmSans = DM_Sans({ subsets: ["latin"], weight: ["400", "500", "700"] });

@@ -110,7 +110,11 @@
   }
 
   @media (max-width: 550px) {
-    padding: 7rem 2rem 7rem 2rem;
+    padding: 7rem 2rem 5rem 2rem;
+  }
+
+  @media (max-width: 375px) {
+    padding: 6rem 2rem 8rem 2rem;
   }
 
   &Links {

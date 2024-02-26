@@ -43,7 +43,8 @@ export default function Hero1() {
       {
         // y: "-100%",
         opacity: 0,
-        duration: 0.5,
+        autoAlpha: 0,
+        duration: 0.45,
         ease: "power2.inOut",
       },
       "-=1"

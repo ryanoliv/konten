@@ -128,8 +128,8 @@ export default function Contact() {
             className={styles.formSelect}
           >
             <option value="">Select an Option</option>
-            <option value="website">A Website</option>
-            <option value="app">An App</option>
+            <option value="Website">A Website</option>
+            <option value="App">An App</option>
           </select>
           {formErrors.service && (
             <p className={styles.errorMessage}>{formErrors.service}</p>

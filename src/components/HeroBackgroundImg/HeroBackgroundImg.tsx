@@ -8,6 +8,7 @@ export default function HeroBackgroundImg() {
         alt="Outer space nightsky"
         fill
         style={{ objectFit: "cover" }}
+        quality={100}
       />
     </div>
   );

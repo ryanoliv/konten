@@ -27,6 +27,7 @@ export default function Document() {
           color="#00cc45"
         ></link>
         <meta name="msapplication-TileColor" content="#00cc45"></meta>
+
         <meta
           property="og:title"
           content="Konten | Web and App Development Agency"
@@ -44,6 +45,9 @@ export default function Document() {
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="300" />
         <meta property="og:image:height" content="300" />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@kontendev" />
         <meta
           name="twitter:image"
           content="https://www.konten.dev/twitter-image.png"
@@ -51,6 +55,11 @@ export default function Document() {
         <meta name="twitter:image:type" content="image/png" />
         <meta name="twitter:image:width" content="300" />
         <meta name="twitter:image:height" content="300" />
+
+        <meta
+          name="google-site-verification"
+          content="nfIL2QGDCqTW6QJP2ahcHjGzYeY7CD73Ygm8n0Je6vI"
+        />
       </Head>
       <body>
         <Main />
