@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://konten.dev
+
+# Sitemaps
+Sitemap: https://konten.dev/sitemap.xml
