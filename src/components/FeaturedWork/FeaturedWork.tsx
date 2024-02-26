@@ -26,7 +26,7 @@ export default function FeaturedWork() {
                 src="./work/alkemi-logo.svg"
                 alt="alkemi collective logo"
                 width={403}
-                height={143.53}
+                height={143}
                 className={styles.featuredWorkLogo}
               />
             </div>
@@ -36,8 +36,8 @@ export default function FeaturedWork() {
               <Image
                 src="./work/star.svg"
                 alt="star icon"
-                width={11.5}
-                height={11.5}
+                width={11}
+                height={11}
               />
               SEO
             </h3>
@@ -57,8 +57,8 @@ export default function FeaturedWork() {
               <Image
                 src="./work/hbmedia-logo.svg"
                 alt="hb media logo"
-                width={403.97}
-                height={132.31}
+                width={403}
+                height={132}
                 className={styles.featuredWorkLogo}
               />
             </div>
@@ -67,22 +67,22 @@ export default function FeaturedWork() {
               <Image
                 src="./work/star.svg"
                 alt="star icon"
-                width={11.5}
-                height={11.5}
+                width={11}
+                height={11}
               />
               UI
               <Image
                 src="./work/star.svg"
                 alt="star icon"
-                width={11.5}
-                height={11.5}
+                width={11}
+                height={11}
               />
               Web Development
               <Image
                 src="./work/star.svg"
                 alt="star icon"
-                width={11.5}
-                height={11.5}
+                width={11}
+                height={11}
               />
               SEO
             </h3>
