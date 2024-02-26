@@ -84,14 +84,16 @@
   transform: translate(-50%, -50%);
   transition: filter 0.2s ease;
 
-  max-width: 100%;
-  height: auto;
+  // max-width: 100%;
+  // height: auto;
 
   @media (max-width: 1024px) {
     max-width: 300px;
+    height: auto;
   }
 
   @media (max-width: 768px) {
     max-width: 230px;
+    height: auto;
   }
 }

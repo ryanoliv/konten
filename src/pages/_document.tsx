@@ -2,9 +2,81 @@ import { Html, Head, Main, NextScript } from "next/document";
 import { Analytics } from "@vercel/analytics/react";
 
 export default function Document() {
+  const schemaMarkup = {
+    "@context": "http://schema.org",
+    "@type": "ProfessionalService",
+    name: "Konten",
+    image: "https://www.konten.dev/logo-black.svg",
+    url: "https://www.konten.dev",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Cape Town",
+      addressRegion: "Western Cape",
+      addressCountry: "ZA",
+    },
+    sameAs: [
+      "https://www.facebook.com/konten.dev",
+      "https://www.instagram.com/konten.dev",
+      "https://www.linkedin.com/company/kontendev",
+      "https://twitter.com/kontendev",
+    ],
+    makesOffer: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "User Experience Design",
+          description:
+            "We put your user at the centre of our design process and make every interfaction meaningful.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "User Interface Design",
+          description:
+            "Where form meets function. Immerse your audience in out-of-this-world experiences tailored to your brand.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Web Development",
+          description:
+            "Crafted for you. As leading website developers in Cape Town, every line of code we write is purpose-driven, amied at building websites that not only look spectacular, but perform optimally.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "App Development",
+          description:
+            "Crafted for you. As leading website developers in Cape Town, every line of code we write is purpose-driven, amied at building apps that not only look spectacular, but perform optimally.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "SEO",
+          description:
+            "Stand out from the crowd. Propel your brand to the forefront of search engines with analytics driven strategies.",
+        },
+      },
+    ],
+  };
   return (
     <Html lang="en">
       <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schemaMarkup),
+          }}
+        />
         <link
           rel="icon"
           href="/favicon-white.svg"
@@ -48,6 +120,14 @@ export default function Document() {
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@kontendev" />
+        <meta
+          property="twitter:title"
+          content="Konten | Web and App Development Agency"
+        />
+        <meta
+          property="twitter:description"
+          content="Craft bespoke websites and mobile apps with Konten, your Cape Town-based design and development partners. Elevate your brand today."
+        />
         <meta
           name="twitter:image"
           content="https://www.konten.dev/twitter-image.png"
