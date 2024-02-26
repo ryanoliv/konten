@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://konten.dev/sitemap.xml",
+    sitemap: "https://www.konten.dev/sitemap.xml",
   };
 }
