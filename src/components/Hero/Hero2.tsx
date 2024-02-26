@@ -24,6 +24,7 @@ export default function Hero2() {
               alt="konten logo green"
               width={21}
               height={21}
+              loading="lazy"
             />
           </Link>
         </div>

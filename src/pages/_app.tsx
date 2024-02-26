@@ -1,16 +1,13 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Lenis from "@studio-freight/lenis";
+import HeroBackgroundImg from "@/components/HeroBackgroundImg/HeroBackgroundImg";
 import Nav from "@/components/Nav/Nav";
 import Footer from "@/components/Footer/Footer";
 import { DM_Sans, Darker_Grotesque } from "next/font/google";
 import { useEffect } from "react";
 
 const dmSans = DM_Sans({ subsets: ["latin"], weight: ["400", "500", "700"] });
-// const darkerGrotesque = Darker_Grotesque({
-//   subsets: ["latin"],
-//   weight: ["400", "500", "800"],
-// });
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -31,7 +28,8 @@ export default function App({ Component, pageProps }: AppProps) {
   }, []);
 
   return (
-    <div className={`${dmSans.className} landing-bg`}>
+    <div className={dmSans.className}>
+      <HeroBackgroundImg />
       <header className={"fixed top-0 w-full z-20"}>
         <Nav />
       </header>

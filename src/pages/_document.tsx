@@ -28,19 +28,29 @@ export default function Document() {
         ></link>
         <meta name="msapplication-TileColor" content="#00cc45"></meta>
         <meta
+          property="og:title"
+          content="Konten | Web and App Development Agency"
+        />
+        <meta
+          property="og:description"
+          content="Craft bespoke websites and mobile apps with Konten, your Cape Town-based design and development partners. Elevate your brand today."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.konten.dev" />
+        <meta
           property="og:image"
           content="https://www.konten.dev/opengraph-image.png"
         />
         <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="180" />
-        <meta property="og:image:height" content="180" />
+        <meta property="og:image:width" content="300" />
+        <meta property="og:image:height" content="300" />
         <meta
           name="twitter:image"
           content="https://www.konten.dev/twitter-image.png"
         />
         <meta name="twitter:image:type" content="image/png" />
-        <meta name="twitter:image:width" content="180" />
-        <meta name="twitter:image:height" content="180" />
+        <meta name="twitter:image:width" content="300" />
+        <meta name="twitter:image:height" content="300" />
       </Head>
       <body>
         <Main />
