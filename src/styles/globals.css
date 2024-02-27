@@ -346,6 +346,47 @@ h6 {
   max-width: 558px;
 }
 
+.legal-main-title {
+  font-size: 56px;
+  font-weight: 600;
+}
+
+.legal-date {
+  font-size: 1rem;
+}
+
+.legal-container {
+  max-width: 650px;
+  margin-top: 8rem;
+}
+
+.legal-intro {
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.legal-intro-subtext {
+  font-weight: 500;
+}
+
+.legal-link {
+  text-decoration: underline;
+  color: var(--clr-light-green);
+}
+
+.legal-title {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.legal-list {
+  list-style: disc;
+}
+
+.legal-list > li {
+  margin-left: 5px;
+}
+
 @media (max-width: 1024px) {
   .testimonial-quote {
     font-size: 1.75rem;

@@ -21,6 +21,12 @@ export default function Home() {
           name="description"
           content="Craft bespoke websites and mobile apps with Konten, your Cape Town-based design and development partners. Elevate your brand today."
         />
+        <link
+          rel="preload"
+          href="fonts/Franchise-Bold-hinted.woff"
+          as="font"
+          type="font/woff"
+        />
       </Head>
       <div id="home">
         <Hero />

@@ -76,8 +76,8 @@ export default function Footer() {
       </div>
       <div className={styles.footerBottom}>
         <p>&copy; Konten 2024. All Rights Reserved.</p>
-        <Link href="/">Privacy Policy</Link>
-        <Link href="/">Terms of Service</Link>
+        <Link href="/privacy-policy">Privacy Policy</Link>
+        <Link href="/terms-of-service">Terms of Service</Link>
       </div>
     </div>
   );
