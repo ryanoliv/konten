@@ -18,7 +18,7 @@ const Sphere: React.FC = () => {
       color: "#00CC45",
       roughness: 0.5,
       // metalness: 0.2,
-      map: loader.load("./4k_venus.jpg"),
+      map: loader.load("./4k_venus.webp"),
     });
     const sphere = new THREE.Mesh(geometry, material);
     scene.add(sphere);

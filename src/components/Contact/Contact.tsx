@@ -100,8 +100,10 @@ export default function Contact() {
             My Name is
           </label>
           <input
+            id="name"
             type="text"
             name="name"
+            autoComplete="name"
             value={formData.name}
             onChange={(e) =>
               setFormData({ ...formData, [e.target.name]: e.target.value })
@@ -139,8 +141,10 @@ export default function Contact() {
             Contact Me At
           </label>
           <input
+            id="email"
             name="email"
-            type="text"
+            type="email"
+            autoComplete="off"
             value={formData.email}
             onChange={(e) =>
               setFormData({ ...formData, [e.target.name]: e.target.value })

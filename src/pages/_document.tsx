@@ -27,7 +27,7 @@ export default function Document() {
           "@type": "Service",
           name: "User Experience Design",
           description:
-            "We put your user at the centre of our design process and make every interfaction meaningful.",
+            "We put your user at the centre of our design process and make every interaction meaningful.",
         },
       },
       {
@@ -45,7 +45,7 @@ export default function Document() {
           "@type": "Service",
           name: "Web Development",
           description:
-            "Crafted for you. As leading website developers in Cape Town, every line of code we write is purpose-driven, amied at building websites that not only look spectacular, but perform optimally.",
+            "Crafted for you. As leading website developers in Cape Town, every line of code we write is purpose-driven, aimed at building websites that not only look spectacular, but perform optimally.",
         },
       },
       {
@@ -54,7 +54,7 @@ export default function Document() {
           "@type": "Service",
           name: "App Development",
           description:
-            "Crafted for you. As leading website developers in Cape Town, every line of code we write is purpose-driven, amied at building apps that not only look spectacular, but perform optimally.",
+            "Crafted for you. As leading app developers in Cape Town, every line of code we write is purpose-driven, aimed at building apps that not only look spectacular, but perform optimally.",
         },
       },
       {
