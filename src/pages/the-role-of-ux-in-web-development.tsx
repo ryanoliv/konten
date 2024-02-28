@@ -6,9 +6,7 @@ export default function BlogPost() {
   return (
     <>
       <Head>
-        <title>
-          Konten | The Role of User Experience in Successful Web Development
-        </title>
+        <title>Konten | User Experience in Successful Web Development</title>
         <link
           rel="canonical"
           href="https://www.konten.dev/the-role-of-ux-in-web-development"
