@@ -1,4 +1,6 @@
 import styles from "./HomeBlog.module.scss";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function HomeBlog() {
   return (
@@ -11,10 +13,23 @@ export default function HomeBlog() {
         </p>
       </div>
       <div className={styles.blogGrid}>
-        <div className={styles.blogCard}></div>
-        <div className={styles.blogCard}></div>
-        <div className={styles.blogCard}></div>
-        {/* <div className={styles.blogCard}></div> */}
+        <Link href="/the-role-of-ux-in-web-development">
+          <div className={styles.blogCard}>
+            <Image
+              src="/blog-images/thumbnails/role-of-ux-in-web-dev.jpg"
+              alt="colourful texture pattern"
+              fill
+              style={{ objectFit: "cover" }}
+              className={styles.blogCardImage}
+            />
+            <div className={styles.blogCardImageOverlay}>
+              <h3>The Role of User Experience in Successful Web Development</h3>
+              <p>9 Min Read</p>
+            </div>
+          </div>
+        </Link>
+        <div className={styles.placeholder}></div>
+        <div className={styles.placeholder}></div>
       </div>
     </div>
   );

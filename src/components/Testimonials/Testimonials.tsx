@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Testimonials() {
   return (
-    <div className="container flex flex-col gap-16 items-center">
+    <section className="container flex flex-col gap-16 items-center">
       <div className="flex flex-col gap-1 items-center">
         <div className="nicole-container">
           <Image src="/nicole.png" alt="Nicole Waugh" width={40} height={40} />
@@ -18,6 +18,6 @@ export default function Testimonials() {
         their post-launch support has been incredible. The team at Konten have
         truly enhanced our online presence and I cannot recommend them enough!”
       </p>
-    </div>
+    </section>
   );
 }

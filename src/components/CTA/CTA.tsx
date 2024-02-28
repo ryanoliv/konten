@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function CTA() {
   return (
-    <div className="container">
+    <section className="container">
       <div className={styles.marqueeContainer}>
         <h2 className={styles.marqueeText}>
           Ready to Transform Your Digital Presence?&nbsp;
@@ -27,6 +27,6 @@ export default function CTA() {
           />
         </Link>
       </div>
-    </div>
+    </section>
   );
 }

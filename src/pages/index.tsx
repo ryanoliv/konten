@@ -21,44 +21,38 @@ export default function Home() {
           name="description"
           content="Craft bespoke websites and mobile apps with Konten, your Cape Town-based design and development partners. Elevate your brand today."
         />
-        <link
-          rel="preload"
-          href="fonts/Franchise-Bold-hinted.woff"
-          as="font"
-          type="font/woff"
-        />
       </Head>
-      <div id="home">
+      <section id="home">
         <Hero />
-      </div>
-      <div id="services">
+      </section>
+      <section id="services">
         <Services />
-      </div>
+      </section>
       <div className="dark-bg">
-        <div id="ux-design">
+        <section id="ux-design">
           <UX />
-        </div>
-        <div id="ui-design">
+        </section>
+        <section id="ui-design">
           <UI />
-        </div>
-        <div id="development">
+        </section>
+        <section id="development">
           <Development />
-        </div>
-        <div id="seo">
+        </section>
+        <section id="seo">
           <SEO />
-        </div>
+        </section>
       </div>
-      <div id="portfolio">
+      <section id="portfolio">
         <FeaturedWork />
-      </div>
+      </section>
       <Testimonials />
       <CTA />
-      <div id="home-blog">
+      <section id="home-blog">
         <HomeBlog />
-      </div>
-      <div id="contact">
+      </section>
+      <section id="contact">
         <Contact />
-      </div>
+      </section>
     </>
   );
 }

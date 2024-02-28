@@ -387,6 +387,98 @@ h6 {
   margin-left: 5px;
 }
 
+.blog-container {
+  padding: 4rem;
+  /* max-width: 90rem; */
+  margin-inline: auto;
+
+  background-color: var(--clr-darkest-green);
+
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.blog-section {
+  max-width: 768px;
+  margin-inline: auto;
+}
+
+.blog-header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 540px;
+}
+
+.blog-cover-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.blog-cover-overlay > h1 {
+  font-size: 48px;
+  font-weight: 600;
+  max-width: 715px;
+  text-align: center;
+}
+
+.blog-header-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.blog-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.blog-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.blog-text-container > h2 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.blog-text-container > h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.blog-text-container > ul {
+  list-style: disc;
+  margin-left: 15px;
+}
+
+.blog-post-image {
+  border-radius: 20px;
+  box-shadow: var(--clr-white) 0px 0px 0px 1px;
+}
+
+.blog-image-source-container p {
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
 @media (max-width: 1024px) {
   .testimonial-quote {
     font-size: 1.75rem;
@@ -439,6 +531,37 @@ h6 {
     font-size: 1rem;
     max-width: 391px;
     text-align: center;
+  }
+
+  .legal-main-title {
+    font-size: 42px;
+  }
+
+  .legal-intro {
+    font-size: 38px;
+  }
+
+  .legal-container {
+    max-width: 100%;
+    margin-top: 6rem;
+  }
+
+  .legal-title {
+    font-size: 26px;
+  }
+
+  .blog-container {
+    padding: 1.5rem;
+    gap: 4rem;
+  }
+
+  .blog-cover-overlay {
+    padding-inline: 1rem;
+  }
+
+  .blog-cover-overlay > h1 {
+    font-size: 24px;
+    max-width: 100%;
   }
 }
 

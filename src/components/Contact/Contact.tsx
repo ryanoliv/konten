@@ -156,7 +156,7 @@ export default function Contact() {
             <p className={styles.errorMessage}>{formErrors.email}</p>
           )}
         </div>
-        <button className="btn">
+        <button className="btn mt-6">
           Submit
           <Image
             src="./btn-logo.svg"
