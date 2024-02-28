@@ -1,5 +1,6 @@
 import { Html, Head, Main, NextScript } from "next/document";
 import { Analytics } from "@vercel/analytics/react";
+import Script from "next/script";
 
 export default function Document() {
   const schemaMarkup = {
@@ -140,6 +141,21 @@ export default function Document() {
           name="google-site-verification"
           content="nfIL2QGDCqTW6QJP2ahcHjGzYeY7CD73Ygm8n0Je6vI"
         />
+
+        {/* Google tag (gtag.js)  */}
+        <Script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_TRACKING_ID}`}
+          strategy="afterInteractive"
+        ></Script>
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+           function gtag(){dataLayer.push(arguments);}
+           gtag('js', new Date());
+
+           gtag('config', '${process.env.NEXT_PUBLIC_GA_TRACKING_ID}`}
+          ;
+        </Script>
       </Head>
       <body>
         <Main />

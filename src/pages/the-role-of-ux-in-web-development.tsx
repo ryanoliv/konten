@@ -15,6 +15,19 @@ export default function BlogPost() {
           name="description"
           content="Explore how UX transforms web development, ensuring engaging, accessible, and responsive digital experiences that resonate deeply with users."
         />
+        <meta
+          property="og:title"
+          content="Konten | User Experience in Successful Web Development"
+        />
+        <meta
+          property="og:description"
+          content="Explore how UX transforms web development, ensuring engaging, accessible, and responsive digital experiences that resonate deeply with users."
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://www.konten.dev/the-role-of-ux-in-web-development"
+        />
       </Head>
       <section className="">
         <div className="blog-header">
