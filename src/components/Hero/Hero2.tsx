@@ -1,8 +1,10 @@
 import styles from "./Hero.module.scss";
 import Link from "next/link";
 import Image from "next/image";
+import { useLocomotiveScroll } from "../LocomotiveScroll/LocomotiveScrollContext";
 
 export default function Hero2() {
+  const { handleLinkClick } = useLocomotiveScroll();
   return (
     <div>
       <div className="container">
@@ -17,15 +19,20 @@ export default function Hero2() {
             Story.
           </p>
 
-          <Link href="/#portfolio" className="btn">
-            See Our Work
-            <Image
-              src="./btn-logo.svg"
-              alt="konten logo green"
-              width={21}
-              height={21}
-              loading="lazy"
-            />
+          <Link href="/#portfolio" passHref legacyBehavior>
+            <a
+              onClick={(e) => handleLinkClick(e, "#portfolio")}
+              className="btn"
+            >
+              See Our Work
+              <Image
+                src="./btn-logo.svg"
+                alt="konten logo green"
+                width={21}
+                height={21}
+                loading="lazy"
+              />
+            </a>
           </Link>
         </div>
       </div>
