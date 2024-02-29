@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import blogCover from "../../public/blog-images/posts/role-of-ux-in-web-dev/cover.jpg";
 
 export default function BlogPost() {
   return (
@@ -32,11 +33,13 @@ export default function BlogPost() {
       <section className="">
         <div className="blog-header">
           <Image
-            src="/blog-images/posts/role-of-ux-in-web-dev/cover.jpg"
+            src={blogCover}
             alt="colourful texture pattern"
+            priority
             fill
             style={{ objectFit: "cover" }}
             className="blog-cover-image"
+            placeholder="blur"
           />
           <div className="blog-cover-overlay">
             <span>User Experience</span>

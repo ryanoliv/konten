@@ -10,6 +10,7 @@
 }
 
 .mainHeading {
+  content-visibility: auto;
   font-family: "Franchise", sans-serif;
   font-size: clamp(8rem, 1.3438rem + 38.2813vw, 38.625rem);
   letter-spacing: -4px;

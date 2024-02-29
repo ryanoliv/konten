@@ -28,7 +28,21 @@ export default function HomeBlog() {
             </div>
           </div>
         </Link>
-        <div className={styles.placeholder}></div>
+        <Link href="/the-best-web-development-tools-in-2024">
+          <div className={styles.blogCard}>
+            <Image
+              src="/blog-images/thumbnails/best-web-dev-tools.jpg"
+              alt="black and white texture pattern"
+              fill
+              style={{ objectFit: "cover" }}
+              className={styles.blogCardImage}
+            />
+            <div className={styles.blogCardImageOverlay}>
+              <h3>The Best Web Development Tools in 2024</h3>
+              <p>7 Min Read</p>
+            </div>
+          </div>
+        </Link>
         <div className={styles.placeholder}></div>
       </div>
     </div>

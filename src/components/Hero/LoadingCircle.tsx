@@ -1,6 +1,3 @@
-import { useEffect } from "react";
-import gsap from "gsap";
-
 export default function LoadingCircle() {
   // Define the radius of the circle
   const radius = 250; // This should be less than half the width/height of the SVG
