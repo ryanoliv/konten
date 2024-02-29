@@ -2,8 +2,13 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import blogCover from "../../public/blog-images/posts/best-web-dev-tools-2024/cover.jpg";
+import { useEffect } from "react";
 
 export default function BlogPost() {
+  //   useEffect(() => {
+  //     window.scrollTo(0, 0);
+  //   }, []);
+
   return (
     <>
       <Head>
