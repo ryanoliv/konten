@@ -2,13 +2,16 @@ import "@/styles/globals.css";
 import { useEffect, useState } from "react";
 import Loader from "@/components/Loader/Loader";
 import type { AppProps } from "next/app";
+import dynamic from "next/dynamic";
 import HeroBackgroundImg from "@/components/HeroBackgroundImg/HeroBackgroundImg";
 import { LocomotiveScrollProvider } from "@/components/LocomotiveScroll/LocomotiveScrollContext";
 import { DM_Sans, Darker_Grotesque } from "next/font/google";
 import Nav from "@/components/Nav/Nav";
-import Footer from "@/components/Footer/Footer";
+// import Footer from "@/components/Footer/Footer";
 
 const dmSans = DM_Sans({ subsets: ["latin"], weight: ["400", "500", "700"] });
+
+const Footer = dynamic(() => import("@/components/Footer/Footer"));
 
 export default function App({ Component, pageProps }: AppProps) {
   const [locomotiveScroll, setLocomotiveScroll] = useState<any | null>(null);

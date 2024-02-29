@@ -51,6 +51,12 @@ export default function Hero() {
           duration: 2,
           ease: "power1.inOut",
         });
+
+      return () => {
+        // Cleanup animations
+        tl.kill(); // Assuming 'tl' is your GSAP timeline
+        ScrollTrigger.getAll().forEach((instance) => instance.kill());
+      };
     });
   }, []);
   return (

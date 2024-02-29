@@ -1,5 +1,4 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 
 export default function Document() {
@@ -101,6 +100,14 @@ export default function Document() {
         ></link>
         <meta name="msapplication-TileColor" content="#00cc45"></meta>
 
+        <link
+          rel="preload"
+          href="/fonts/Franchise-Bold-hinted.woff"
+          as="font"
+          type="font/woff"
+          crossOrigin="anonymous"
+        />
+
         <meta
           property="og:title"
           content="Konten | Web and App Development Agency"
@@ -121,14 +128,7 @@ export default function Document() {
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@kontendev" />
-        <meta
-          property="twitter:title"
-          content="Konten | Web and App Development Agency"
-        />
-        <meta
-          property="twitter:description"
-          content="Craft bespoke websites and mobile apps with Konten, your Cape Town-based design and development partners. Elevate your brand today."
-        />
+       
         <meta
           name="twitter:image"
           content="https://www.konten.dev/twitter-image.png"
@@ -160,7 +160,6 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
-        <Analytics />
       </body>
     </Html>
   );
