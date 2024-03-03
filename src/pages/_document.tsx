@@ -109,15 +109,31 @@ export default function Document() {
         />
 
         <meta property="og:type" content="website" />
-
+        <meta property="og:url" content="https://www.konten.dev" />
+        <meta
+          property="og:title"
+          content="Konten | Website and App Development Agency"
+        />
+        <meta
+          property="og:description"
+          content="Craft bespoke websites and mobile apps with Konten, your Cape Town-based design and development partners. Elevate your brand today."
+        />
         <meta
           property="og:image"
           content="https://www.konten.dev/opengraph-image.png"
         />
         <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="300" />
-        <meta property="og:image:height" content="300" />
+        <meta property="og:image:width" content="200" />
+        <meta property="og:image:height" content="200" />
 
+        <meta
+          property="twitter:title"
+          content="Konten | Website and App Development Agency"
+        />
+        <meta
+          property="twitter:description"
+          content="Craft bespoke websites and mobile apps with Konten, your Cape Town-based design and development partners. Elevate your brand today."
+        />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@kontendev" />
 

@@ -24,27 +24,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Konten | Web and App Development Agency</title>
+        <title>Konten | Website and App Development Agency</title>
         <link rel="canonical" href="https://www.konten.dev" />
         <meta
           name="description"
-          content="Craft bespoke websites and mobile apps with Konten, your Cape Town-based design and development partners. Elevate your brand today."
-        />
-        <meta property="og:url" content="https://www.konten.dev" />
-        <meta
-          property="og:title"
-          content="Konten | Web and App Development Agency"
-        />
-        <meta
-          property="og:description"
-          content="Craft bespoke websites and mobile apps with Konten, your Cape Town-based design and development partners. Elevate your brand today."
-        />
-        <meta
-          property="twitter:title"
-          content="Konten | Web and App Development Agency"
-        />
-        <meta
-          property="twitter:description"
           content="Craft bespoke websites and mobile apps with Konten, your Cape Town-based design and development partners. Elevate your brand today."
         />
       </Head>
