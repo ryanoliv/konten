@@ -29,7 +29,11 @@ const navLinks = [
   },
 ];
 
-export default function NavMenu() {
+interface NavMenuProps {
+  toggleMenu: () => void; // Define the type of the toggleMenu function
+}
+
+export default function NavMenu({ toggleMenu }: NavMenuProps) {
   return (
     <motion.div
       variants={menuSlide}
@@ -44,7 +48,13 @@ export default function NavMenu() {
             <p>Navigation</p>
           </div>
           {navLinks.map((data, index) => {
-            return <NavLink key={index} data={{ ...data, index }}></NavLink>;
+            return (
+              <NavLink
+                key={index}
+                data={{ ...data, index }}
+                toggleMenu={toggleMenu}
+              />
+            );
           })}
         </div>
         <div className={styles.socialLinks}>

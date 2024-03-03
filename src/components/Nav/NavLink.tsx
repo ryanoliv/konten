@@ -11,9 +11,10 @@ interface NavLinkData {
 
 interface NavLinkProps {
   data: NavLinkData;
+  toggleMenu: () => void;
 }
 
-export default function NavLink({ data }: NavLinkProps) {
+export default function NavLink({ data, toggleMenu }: NavLinkProps) {
   const { title, href, index } = data;
 
   return (
@@ -24,6 +25,7 @@ export default function NavLink({ data }: NavLinkProps) {
       exit="exit"
       initial="initial"
       className={styles.link}
+      onClick={toggleMenu}
     >
       <Link href={href}>{title}</Link>
     </motion.div>

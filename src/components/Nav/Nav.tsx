@@ -43,7 +43,7 @@ export default function Nav() {
             ></div>
           </div>
           <AnimatePresence mode="wait">
-            {isActive && <NavMenu />}
+            {isActive && <NavMenu toggleMenu={() => setIsActive(false)} />}
           </AnimatePresence>
         </div>
       </div>

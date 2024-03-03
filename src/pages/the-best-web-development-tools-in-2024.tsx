@@ -4,12 +4,10 @@ import Link from "next/link";
 import blogCover from "../../public/blog-images/posts/best-web-dev-tools-2024/cover.jpg";
 
 export default function BlogPost() {
- 
-
   return (
     <>
       <Head>
-        <title>Konten | Best Web Dev Tools in 2024</title>
+        <title>Konten | Best Web Development Tools in 2024</title>
         <link
           rel="canonical"
           href="https://www.konten.dev/the-best-web-development-tools-in-2024"
@@ -20,7 +18,7 @@ export default function BlogPost() {
         />
         <meta
           property="og:title"
-          content="Konten | Best Web Dev Tools in 2024"
+          content="Konten | Best Web Development Tools in 2024"
         />
         <meta
           property="og:description"

@@ -40,7 +40,6 @@ export default function Loader() {
     }).to(
       ".loading-circle, loading-logo",
       {
-        // y: "-100%",
         opacity: 0,
         autoAlpha: 0,
         duration: 0.5,

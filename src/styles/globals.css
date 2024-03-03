@@ -44,6 +44,8 @@ body {
   scrollbar-width: none;
 }
 
+/* styles/globals.css */
+
 .content {
   position: relative;
 }
@@ -131,7 +133,7 @@ html.lenis {
 
 .overlay {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--clr-darkest-green);
   position: fixed;
   inset: 0;
@@ -510,6 +512,10 @@ h6 {
   .container-hero {
     padding: 4rem 1.5rem;
     margin-block: 0;
+  }
+
+  .overlay {
+    height: 100dvh;
   }
 
   .testimonial-quote {

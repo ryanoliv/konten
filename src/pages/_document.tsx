@@ -108,16 +108,8 @@ export default function Document() {
           crossOrigin="anonymous"
         />
 
-        <meta
-          property="og:title"
-          content="Konten | Web and App Development Agency"
-        />
-        <meta
-          property="og:description"
-          content="Craft bespoke websites and mobile apps with Konten, your Cape Town-based design and development partners. Elevate your brand today."
-        />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.konten.dev" />
+
         <meta
           property="og:image"
           content="https://www.konten.dev/opengraph-image.png"
@@ -128,7 +120,7 @@ export default function Document() {
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@kontendev" />
-       
+
         <meta
           name="twitter:image"
           content="https://www.konten.dev/twitter-image.png"
