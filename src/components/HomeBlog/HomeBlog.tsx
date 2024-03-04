@@ -43,7 +43,23 @@ export default function HomeBlog() {
             </div>
           </div>
         </Link>
-        <div className={styles.placeholder}></div>
+        <Link href="/web-design-vs-web-development-understanding-the-differences">
+          <div className={styles.blogCard}>
+            <Image
+              src="/blog-images/thumbnails/web-design-vs-web-development.jpg"
+              alt="gradient blur pattern with reds and oranges"
+              fill
+              style={{ objectFit: "cover" }}
+              className={styles.blogCardImage}
+            />
+            <div className={styles.blogCardImageOverlay}>
+              <h3>
+                Web Design vs. Web Development: Understanding the Differences
+              </h3>
+              <p>16 Min Read</p>
+            </div>
+          </div>
+        </Link>
       </div>
     </div>
   );

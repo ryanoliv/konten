@@ -429,6 +429,10 @@ h6 {
   gap: 1.5rem;
 }
 
+.blog-title-design-dev {
+  max-width: 820px !important;
+}
+
 .blog-cover-overlay > h1 {
   font-size: 48px;
   font-weight: 600;
