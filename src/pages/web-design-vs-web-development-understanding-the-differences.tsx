@@ -7,9 +7,7 @@ export default function BlogPost() {
   return (
     <>
       <Head>
-        <title>
-          Konten | Web Design vs. Web Development: Understanding the Differences
-        </title>
+        <title>Konten | Web Design vs. Web Development: The Differences</title>
         <link
           rel="canonical"
           href="https://www.konten.dev/web-design-vs-web-development-understanding-the-differences"
@@ -20,7 +18,7 @@ export default function BlogPost() {
         />
         <meta
           property="og:title"
-          content="Konten | Web Design vs. Web Development: Understanding the Differences"
+          content="Konten | Web Design vs. Web Development: The Differences"
         />
         <meta
           property="og:description"
