@@ -4,32 +4,34 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
 <url>
   <loc>https://www.konten.dev/</loc>
-  <lastmod>2024-02-29T08:22:00+00:00</lastmod>
+  <lastmod>2024-03-04T10:42:40+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.konten.dev/the-role-of-ux-in-web-development</loc>
-  <lastmod>2024-02-29T08:22:00+00:00</lastmod>
+  <lastmod>2024-03-04T10:42:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.konten.dev/the-best-web-development-tools-in-2024</loc>
-  <lastmod>2024-02-29T08:22:00+00:00</lastmod>
+  <lastmod>2024-03-04T10:42:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.konten.dev/web-design-vs-web-development-understanding-the-differences</loc>
+  <lastmod>2024-03-04T10:42:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.konten.dev/privacy-policy</loc>
-  <lastmod>2024-02-29T08:22:00+00:00</lastmod>
+  <lastmod>2024-03-04T10:42:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.konten.dev/terms-of-service</loc>
-  <lastmod>2024-02-29T08:22:00+00:00</lastmod>
+  <lastmod>2024-03-04T10:42:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
