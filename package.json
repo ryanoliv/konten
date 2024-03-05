@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@gsap/react": "^2.1.0",
     "@sendgrid/mail": "^8.1.1",
     "@types/gsap": "^3.0.0",
     "@types/locomotive-scroll": "^4.1.3",

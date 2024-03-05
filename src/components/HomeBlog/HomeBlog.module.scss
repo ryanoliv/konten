@@ -67,12 +67,17 @@
   height: 100%;
   // height: 600px;
 
+  &:hover &Image {
+    filter: sepia(1);
+  }
+
   @media (max-width: 550px) {
     max-width: 100%;
   }
 
   &Image {
     border-radius: 40.5px;
+    transition: filter 0.4s ease;
 
     &Overlay {
       position: absolute;

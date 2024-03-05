@@ -22,6 +22,24 @@
   font-display: swap;
 }
 
+.page-transition-enter {
+  opacity: 0;
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transition: opacity 500ms; /* Adjust duration as needed */
+}
+
+.page-transition-exit {
+  opacity: 1;
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transition: opacity 500ms; /* Adjust duration as needed */
+}
+
 html,
 body {
   /* height: 100%; */
@@ -523,6 +541,10 @@ h6 {
     font-size: 415px;
     line-height: 320px;
   }
+
+  .blog-title-design-dev {
+    font-size: 42px !important;
+  }
 }
 
 @media (max-width: 550px) {
@@ -603,6 +625,10 @@ h6 {
   .word {
     margin-right: 11px;
   }
+
+  .blog-title-design-dev {
+    font-size: 24px !important;
+  }
 }
 
 @media (max-width: 436px) {
@@ -627,5 +653,13 @@ h6 {
     font-size: 1rem;
     max-width: 391px;
     text-align: center;
+  }
+
+  .blog-cover-overlay > h1 {
+    font-size: 23px;
+  }
+
+  .blog-title-design-dev {
+    font-size: 20px !important;
   }
 }
