@@ -1,4 +1,5 @@
 import styles from "./Nav.module.scss";
+
 import Link from "next/link";
 import NavLink from "./NavLink";
 import { motion } from "framer-motion";

@@ -16,6 +16,7 @@ const Sphere: React.FC = () => {
     const geometry = new THREE.SphereGeometry(3, 64, 64);
     const material = new THREE.MeshStandardMaterial({
       color: "#00CC45",
+      // color: "#B118C8",
       roughness: 0.5,
       // metalness: 0.2,
       map: loader.load("./4k_venus.webp"),

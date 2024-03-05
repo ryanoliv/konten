@@ -80,6 +80,7 @@ export const LocomotiveScrollProvider: React.FC<
   const handleLinkClick = useCallback(
     (e: React.MouseEvent<HTMLAnchorElement>, target: string | number) => {
       e.preventDefault();
+
       if (target === 0) {
         if (router.pathname !== "/") {
           router.push("/");

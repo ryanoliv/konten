@@ -6,7 +6,7 @@ export default function PrivacyPolicy() {
     <>
       <Head>
         <link rel="canonical" href="https://www.konten.dev/privacy-policy" />
-        <title>Konten | Privacy Policy</title>
+        <title>Konten | Privacy Policy: Protecting Your Data</title>
         <meta
           name="description"
           content="Konten's commitment to protecting your personal information and privacy. Learn about our data collection, usage, and sharing practices."

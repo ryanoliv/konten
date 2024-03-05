@@ -6,7 +6,7 @@ export default function TermsOfService() {
     <>
       <Head>
         <link rel="canonical" href="https://www.konten.dev/terms-of-service" />
-        <title>Konten | Terms of Service</title>
+        <title>Konten | Terms of Service: Web & App Development</title>
         <meta
           name="description"
           content="The comprehensive Terms of Service for Konten. Dive deep into understanding your rights, obligations, and the conditions guiding your usage of our services."

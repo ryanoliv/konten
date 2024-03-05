@@ -14,9 +14,8 @@ export default function Hero2() {
             <span className="light-green">web development</span> in Cape Town.
           </h1>
           <p className={`${styles.subheading} ${styles.maxWHero}`}>
-            We Harmonise Cost-Effectiveness, Quality, and Dedicated Support to
-            Craft a Digital Identity That Truly Embodies Your Business&apos;s
-            Story.
+            We Harmonise Quality and Dedicated Support to Craft a Digital
+            Identity That Truly Embodies Your Business&apos;s Story.
           </p>
 
           <Link href="/#portfolio" passHref legacyBehavior>
