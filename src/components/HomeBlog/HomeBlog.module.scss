@@ -69,6 +69,10 @@
 
   &:hover &Image {
     filter: sepia(1);
+
+    @media (max-width: 550px) {
+      filter: unset;
+    }
   }
 
   @media (max-width: 550px) {

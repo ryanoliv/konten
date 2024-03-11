@@ -184,6 +184,17 @@ html.lenis {
   z-index: 55;
 }
 
+.loading-logo-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 55;
+
+  width: 45px;
+  height: 45px;
+}
+
 .loading-logo {
   position: absolute;
   top: 50%;
@@ -274,11 +285,12 @@ html.lenis {
   position: relative;
   z-index: 5;
 
-  background: linear-gradient(
+  /* background: linear-gradient(
     to bottom,
     var(--clr-darkest-green),
     var(--clr-white)
-  );
+  ); */
+  background-color: var(--clr-grey);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

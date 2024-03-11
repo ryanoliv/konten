@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Image from "next/image";
 import gsap from "gsap";
 
 export default function Loader() {
@@ -57,6 +58,13 @@ export default function Loader() {
         height="400"
         viewBox="0 0 400 400" // Update the viewBox to match the new size
         xmlns="http://www.w3.org/2000/svg"
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          zIndex: 55,
+        }}
       >
         <circle
           cx="200" // Center of the SVG canvas
@@ -69,7 +77,7 @@ export default function Loader() {
           strokeDashoffset={circumference}
           strokeLinecap="round"
         />
-        <svg
+        {/* <svg
           className="loading-logo"
           width="45"
           height="45"
@@ -87,8 +95,17 @@ export default function Loader() {
             d="M0 27.0351C0 30.0014 0.483633 32.8226 1.35417 35.4987C1.67659 32.5646 2.6761 29.7918 4.54615 27.4381C7.93158 23.1338 13.1871 21.1186 18.6521 20.0385C24.101 18.9745 29.9046 18.8456 35.4987 17.4914C38.5939 16.7498 41.7375 15.5407 44.2363 13.5578C46.3159 11.8813 47.2832 9.33412 45.123 6.96432C44.333 6.25499 43.4947 5.5779 42.6242 4.9653C44.2041 8.20564 42.9789 13.0258 30.1626 14.2833C26.8739 14.6218 23.6013 14.9281 20.3609 15.3795C19.4098 15.5085 18.233 15.6858 17.0239 15.8954C17.0239 15.8954 18.0879 14.5735 25.6003 12.8646C41.0443 9.38248 38.1586 2.65998 33.5803 0.806055C31.4845 0.29018 29.2759 0 27.019 0C12.0908 0.0161211 0 12.1069 0 27.0351Z"
             fill="#fff"
           />
-        </svg>
+        </svg> */}
       </svg>
+      <div className="loading-logo-container">
+        <Image
+          src="/logo-black.svg" // Adjust the path to your logo image
+          alt="Konten Logo"
+          className="loading-logo"
+          width={45}
+          height={45}
+        />
+      </div>
     </div>
   );
 }

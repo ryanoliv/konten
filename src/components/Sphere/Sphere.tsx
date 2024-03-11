@@ -13,12 +13,10 @@ const Sphere: React.FC = () => {
 
     // create sphere
     const loader = new THREE.TextureLoader();
-    const geometry = new THREE.SphereGeometry(3, 64, 64);
+    const geometry = new THREE.SphereGeometry(3, 32, 32);
     const material = new THREE.MeshStandardMaterial({
       color: "#00CC45",
-      // color: "#B118C8",
       roughness: 0.5,
-      // metalness: 0.2,
       map: loader.load("./4k_venus.webp"),
     });
     const sphere = new THREE.Mesh(geometry, material);
@@ -29,8 +27,8 @@ const Sphere: React.FC = () => {
     pointLight.position.set(0, 4, 14);
     scene.add(pointLight);
 
-    const pointLightHelper = new THREE.PointLightHelper(pointLight, 1);
-    scene.add(pointLightHelper);
+    // const pointLightHelper = new THREE.PointLightHelper(pointLight, 1);
+    // scene.add(pointLightHelper);
 
     // Camera
     const camera = new THREE.PerspectiveCamera(
