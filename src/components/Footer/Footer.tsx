@@ -75,7 +75,8 @@ export default function Footer() {
         </div>
       </div>
       <div className={styles.footerBottom}>
-        <p>&copy; Konten 2024. All Rights Reserved.</p>
+        {/* <p>&copy; Konten 2024. All Rights Reserved.</p> */}
+        <p>Designed & Developed by Ryan Oliver.</p>
         <Link href="/privacy-policy">Privacy Policy</Link>
         <Link href="/terms-of-service">Terms of Service</Link>
       </div>
