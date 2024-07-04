@@ -12,7 +12,7 @@ export default function Footer() {
           <Link href="/#home">Home</Link>
           <Link href="/#services">Services</Link>
           <Link href="/#portfolio">Portfolio</Link>
-          <Link href="/#blog">Blog</Link>
+          <Link href="/#home-blog">Blog</Link>
           <Link href="/#contact">Contact</Link>
         </div>
         <div className={styles.footerSocials}>
