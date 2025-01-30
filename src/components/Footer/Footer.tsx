@@ -2,6 +2,7 @@ import styles from "./Footer.module.scss";
 import Link from "next/link";
 
 export default function Footer() {
+  const year = new Date().getFullYear();
   return (
     <div className={styles.footer}>
       <div className={styles.footerTop}>
@@ -75,7 +76,7 @@ export default function Footer() {
         </div>
       </div>
       <div className={styles.footerBottom}>
-        <p>&copy; Konten 2024. All Rights Reserved.</p>
+        <p>&copy; Konten {year}. All Rights Reserved.</p>
         <Link href="/privacy-policy">Privacy Policy</Link>
         <Link href="/terms-of-service">Terms of Service</Link>
       </div>

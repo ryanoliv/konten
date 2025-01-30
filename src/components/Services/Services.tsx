@@ -6,22 +6,30 @@ import Image from "next/image";
 const services = [
   {
     service: "User Experience Design",
+    serviceBio:
+      "Improve customer satisfaction with intuitive and user-friendly website experiences.",
     href: "#ux-design",
   },
   {
     service: "User Interface Design",
+    serviceBio:
+      "Modern, high-quality UI design that enhances your brand’s digital presence.",
     href: "#ui-design",
   },
   {
     service: "Web Development",
+    serviceBio:
+      "Fast, responsive, and SEO-optimized websites tailored to your business needs.",
     href: "#development",
   },
-  {
-    service: "App Development",
-    href: "#development",
-  },
+  // {
+  //   service: "App Development",
+  //   href: "#development",
+  // },
   {
     service: "SEO",
+    serviceBio:
+      "Improve your Google ranking and attract more clients with on-page and technical SEO.",
     href: "#seo",
   },
 ];
@@ -36,31 +44,16 @@ export default function Services() {
           className={`flex flex-col p-6 ${styles.servicesContainer} relative`}
         >
           {services.map((service) => (
-            // <Link
-            //   key={service.service}
-            //   href={service.href}
-            //   passHref
-            //   legacyBehavior
-            // >
-            //   <a
-            //     onClick={(e) => handleLinkClick(e, service.href)}
-            //     className="flex py-4 justify-between items-center w-full"
-            //   >
-            //     <h3 className={styles.service}>{service.service}</h3>
-            //     <Image
-            //       src="./work/star.svg"
-            //       alt="star icon"
-            //       width={28}
-            //       height={28}
-            //     />
-            //   </a>
-            // </Link>
-
             <div
               key={service.service}
               className="flex py-2 md:py-4 justify-between items-center w-full"
             >
-              <h3 className={styles.service}>{service.service}</h3>
+              <div className="flex flex-col">
+                <h3 className={styles.service}>{service.service}</h3>
+                <p className="uppercase tracking-[2px] text-sm opacity-60">
+                  {service.serviceBio}
+                </p>
+              </div>
               <Image
                 src="./work/star.svg"
                 alt="star icon"

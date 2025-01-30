@@ -24,11 +24,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Konten | Website and App Development Agency</title>
+        <title>Konten | Custom Web Development Services</title>
         <link rel="canonical" href="https://www.konten.dev" />
         <meta
           name="description"
-          content="Craft bespoke websites and mobile apps with Konten, your Cape Town-based design and development partners. Elevate your brand today."
+          content="Craft custom websites with Konten, your Cape Town-based design and Next.js development partners. Elevate your brand today."
         />
       </Head>
       <section id="home">

@@ -6,6 +6,7 @@
   box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1) inset,
     0px -10px 25px 0px rgba(255, 255, 255, 0.3) inset;
   backdrop-filter: blur(3.5px);
+  border: 1px solid rgba(237, 242, 244, 0.3);
 
   & > *:not(:nth-last-child(1)) {
     border-bottom: 2px solid rgba(204, 164, 0, 0.1);

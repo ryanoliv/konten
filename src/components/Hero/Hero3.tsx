@@ -12,10 +12,9 @@ export default function Hero3() {
             experiences.
           </h3>
           <p className={`${styles.subheading} ${styles.maxWHero3}`}>
-            Whether it&apos;s a <span className="light-green">website</span> or{" "}
-            <span className="light-green">mobile</span> application, our
-            dedication lies in delivering an unparalleled user experience
-            tailored to your distinct needs in South Africa and beyond.
+            Our dedication lies in delivering an unparalleled{" "}
+            <span className="light-green">user experience</span> tailored to
+            your business needs in South Africa and globally.
           </p>
         </div>
       </div>

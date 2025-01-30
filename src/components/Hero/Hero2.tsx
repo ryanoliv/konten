@@ -11,22 +11,18 @@ export default function Hero2() {
         <div className="flex flex-col gap-12">
           <h1 className={styles.mainTitle}>
             Craft your digital future with{" "}
-            <span className="light-green">web development</span> in Cape Town.
+            <span className="light-green">web development</span> based in Cape
+            Town.
           </h1>
           <p className={`${styles.subheading} ${styles.maxWHero}`}>
-            {/* We Harmonise Quality and Dedicated Support to Craft a Digital
-            Identity That Truly Embodies Your Business&apos;s Story. */}
-            Our focus is on providing exceptional quality and dedicated support
-            to create a digital identity that truly reflects the story of your
-            business.
+            Whether you&apos;re a startup or an established business, we create
+            high-performing websites that captivate your audience and drive
+            results.
           </p>
 
-          <Link href="/#portfolio" passHref legacyBehavior>
-            <a
-              onClick={(e) => handleLinkClick(e, "#portfolio")}
-              className="btn"
-            >
-              See Our Work
+          <Link href="/#contact" passHref legacyBehavior>
+            <a onClick={(e) => handleLinkClick(e, "#contact")} className="btn">
+              Get a Custom Website
               <Image
                 src="./btn-logo.svg"
                 alt="konten logo green"

@@ -8,7 +8,7 @@
   --clr-dark-green: #29332c;
   --clr-darkest-green: #040504;
 
-  --clr-white: #edf2f4;
+  --clr-white: #edf3f5;
   --clr-grey: #d8dbe2;
 
   --clr-yellow: #cca400;
@@ -305,6 +305,7 @@ html.lenis {
 
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .word {
