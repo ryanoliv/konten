@@ -10,7 +10,8 @@ export default async function handler(
   res: NextApiResponse<Data>
 ) {
   try {
-    const { name, service, email } = req.body;
+    // const { name, service, email } = req.body;
+    const { name, email } = req.body;
 
     // const message = `
     // Client Name: ${name} \r\n
@@ -21,9 +22,10 @@ export default async function handler(
     const message = `
     <h1>New Email Just Received From Konten.dev</h1>
     <p><strong>Client Name:</strong> ${name}</p>
-    <p><strong>Client Wants A:</strong> ${service}</p>
     <p><strong>Client Email:</strong> ${email}</p>
     `;
+
+    // <p><strong>Client Wants A:</strong> ${service}</p>
 
     console.log(`message: ${message}`);
 

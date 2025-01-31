@@ -4,7 +4,7 @@ import Image from "next/image";
 
 type FormErrors = {
   name?: string;
-  service?: string;
+  // service?: string;
   email?: string;
 };
 
@@ -15,7 +15,7 @@ interface SuccessModalProps {
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
-    service: "",
+    // service: "",
     email: "",
   });
   const [formErrors, setFormErrors] = useState<FormErrors>({});
@@ -31,7 +31,7 @@ export default function Contact() {
     let errors: FormErrors = {};
 
     if (!formData.name) errors.name = "Name is required";
-    if (!formData.service) errors.service = "Please select a service";
+    // if (!formData.service) errors.service = "Please select a service";
     if (!formData.email) {
       errors.email = "Email is required";
     } else if (
@@ -79,7 +79,7 @@ export default function Contact() {
       }
       setFormData({
         name: "",
-        service: "",
+        // service: "",
         email: "",
       });
     } else {
@@ -119,7 +119,8 @@ export default function Contact() {
           <label htmlFor="service" className={styles.formLabel}>
             And I Want
           </label>
-          <select
+          <label className={styles.formSelect}>A Website</label>
+          {/* <select
             id="service"
             name="service"
             value={formData.service}
@@ -131,10 +132,10 @@ export default function Contact() {
             <option value="">Select an Option</option>
             <option value="Website">A Website</option>
             <option value="App">An App</option>
-          </select>
-          {formErrors.service && (
+          </select> */}
+          {/* {formErrors.service && (
             <p className={styles.errorMessage}>{formErrors.service}</p>
-          )}
+          )} */}
         </div>
         <div className="flex justify-between items-end w-full border-b border-slate-500 relative">
           <label htmlFor="email" className={styles.formLabel}>

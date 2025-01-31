@@ -19,7 +19,7 @@ const services = [
   {
     service: "Web Development",
     serviceBio:
-      "Fast, responsive, and SEO-optimized websites tailored to your business needs.",
+      "Fast, responsive, and SEO-optimised websites tailored to your business needs.",
     href: "#development",
   },
   // {
