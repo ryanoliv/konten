@@ -80,6 +80,15 @@ export default function Footer() {
         <Link href="/privacy-policy">Privacy Policy</Link>
         <Link href="/terms-of-service">Terms of Service</Link>
       </div>
+      <div className="mt-8">
+        <p className="text-sm text-center text-[#d8dbe2]">
+          Listed in the South African{" "}
+          <Link href="https://www.web-design.co.za/" className="underline">
+            web design
+          </Link>{" "}
+          company directory.
+        </p>
+      </div>
     </div>
   );
 }
