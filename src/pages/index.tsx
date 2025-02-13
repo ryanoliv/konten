@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Konten | Custom Web Development Services</title>
+        <title>Website Developers in Cape Town | Konten</title>
         <link rel="canonical" href="https://www.konten.dev" />
         <meta
           name="description"
@@ -36,6 +36,9 @@ export default function Home() {
       </section>
       <section id="services">
         <Services />
+      </section>
+      <section id="portfolio">
+        <FeaturedWork />
       </section>
       <div className="dark-bg">
         <section id="ux-design">
@@ -51,9 +54,9 @@ export default function Home() {
           <SEO />
         </section>
       </div>
-      <section id="portfolio">
+      {/* <section id="portfolio">
         <FeaturedWork />
-      </section>
+      </section> */}
       <Testimonials />
       <CTA />
       <section id="home-blog">

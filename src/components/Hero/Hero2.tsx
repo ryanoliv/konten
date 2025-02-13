@@ -10,8 +10,8 @@ export default function Hero2() {
       <div className="container">
         <div className="flex flex-col gap-12">
           <h1 className={styles.mainTitle}>
-            Craft your digital future with{" "}
-            <span className="light-green">web development</span> based in Cape
+            Craft your digital future with the best{" "}
+            <span className="light-green">website developers</span> in Cape
             Town.
           </h1>
           <p className={`${styles.subheading} ${styles.maxWHero}`}>

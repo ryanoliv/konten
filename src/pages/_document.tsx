@@ -112,7 +112,7 @@ export default function Document() {
         <meta property="og:url" content="https://www.konten.dev" />
         <meta
           property="og:title"
-          content="Konten | Website and App Development Agency"
+          content="Website Developers in Cape Town | Konten"
         />
         <meta
           property="og:description"
@@ -128,7 +128,7 @@ export default function Document() {
 
         <meta
           property="twitter:title"
-          content="Konten | Website and App Development Agency"
+          content="Website Developers in Cape Town | Konten"
         />
         <meta
           property="twitter:description"

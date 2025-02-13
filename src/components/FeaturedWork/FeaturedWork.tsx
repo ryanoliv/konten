@@ -2,6 +2,45 @@ import styles from "./FeaturedWork.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 
+const projects = [
+  {
+    href: "https://alkemi.global",
+    imgBoxSrc: "./work/alkemi-box.svg",
+    imgBoxAlt: "gray rectangle box",
+    logoSrc: "./work/alkemi-logo.svg",
+    logoAlt: "alkemi collective logo",
+    services: ["Web Development", "SEO"],
+    title: "Alkemi Collective",
+  },
+  {
+    href: "https://hbmedia.io",
+    imgBoxSrc: "./work/hbmedia-box.svg",
+    imgBoxAlt: "blurred gradient box",
+    logoSrc: "./work/hbmedia-logo.svg",
+    logoAlt: "hb media logo",
+    services: ["UX", "UI", "Web Development", "SEO"],
+    title: "HB Media",
+  },
+  {
+    href: "https://www.rootsandwings.education/",
+    imgBoxSrc: "./work/roots+wings-box.svg",
+    imgBoxAlt: "white background box",
+    logoSrc: "./work/roots+wings-logo.svg",
+    logoAlt: "Roots & Wings logo",
+    services: ["UX", "UI", "Web Development", "SEO"],
+    title: "Roots & Wings",
+  },
+  {
+    href: "https://firetailfly.com/",
+    imgBoxSrc: "./work/firetail-box.svg",
+    imgBoxAlt: "blue background box",
+    logoSrc: "./work/firetail-logo.svg",
+    logoAlt: "firetail fly logo",
+    services: ["UX", "UI", "Web Development", "SEO"],
+    title: "Firetail Fly",
+  },
+];
+
 export default function FeaturedWork() {
   return (
     <div className="container flex flex-col gap-16">
@@ -11,84 +50,45 @@ export default function FeaturedWork() {
           A collection of our most recent transformations.
         </p>
       </div>
-      <div className="flex flex-col md:flex-row lg:flex-row justify-between gap-16 md:gap-4 w-full">
-        <Link href="https://alkemi.global" target="_blank">
-          <div className={styles.featuredWorkProject}>
-            <div className={styles.featuredWorkImgBox}>
-              <Image
-                src="./work/alkemi-box.svg"
-                alt="gray rectangle box"
-                width={635}
-                height={390}
-                className={styles.featuredWorkImg}
-              />
-              <Image
-                src="./work/alkemi-logo.svg"
-                alt="alkemi collective logo"
-                width={403}
-                height={143}
-                className={styles.featuredWorkLogo}
-              />
+      <div className="grid grid-cols-1 gap-x-4 gap-y-16 md:grid-cols-2">
+        {projects.map((project, index) => (
+          <Link href={project.href} target="_blank" key={index}>
+            <div className={styles.featuredWorkProject}>
+              <div className={styles.featuredWorkImgBox}>
+                <Image
+                  src={project.imgBoxSrc}
+                  alt={project.imgBoxAlt}
+                  width={635}
+                  height={390}
+                  className={styles.featuredWorkImg}
+                />
+                <Image
+                  src={project.logoSrc}
+                  alt={project.logoAlt}
+                  width={403}
+                  height={132}
+                  className={styles.featuredWorkLogo}
+                />
+              </div>
+              <h3 className="flex gap-2">
+                {project.services.map((service, i) => (
+                  <span key={i} className="flex items-center gap-2">
+                    {service}
+                    {i < project.services.length - 1 && (
+                      <Image
+                        src="./work/star.svg"
+                        alt="star icon"
+                        width={11}
+                        height={11}
+                      />
+                    )}
+                  </span>
+                ))}
+              </h3>
+              <h4>{project.title}</h4>
             </div>
-
-            <h3 className="flex gap-2">
-              Web Development{" "}
-              <Image
-                src="./work/star.svg"
-                alt="star icon"
-                width={11}
-                height={11}
-              />
-              SEO
-            </h3>
-            <h4>Alkemi Collective</h4>
-          </div>
-        </Link>
-        <Link href="https://hbmedia.io" target="_blank">
-          <div className={styles.featuredWorkProject}>
-            <div className={styles.featuredWorkImgBox}>
-              <Image
-                src="./work/hbmedia-box.svg"
-                alt="blurred gradient box"
-                width={635}
-                height={390}
-                className={styles.featuredWorkImg}
-              />
-              <Image
-                src="./work/hbmedia-logo.svg"
-                alt="hb media logo"
-                width={403}
-                height={132}
-                className={styles.featuredWorkLogo}
-              />
-            </div>
-            <h3 className="flex gap-2">
-              UX
-              <Image
-                src="./work/star.svg"
-                alt="star icon"
-                width={11}
-                height={11}
-              />
-              UI
-              <Image
-                src="./work/star.svg"
-                alt="star icon"
-                width={11}
-                height={11}
-              />
-              Web Development
-              <Image
-                src="./work/star.svg"
-                alt="star icon"
-                width={11}
-                height={11}
-              />
-              SEO
-            </h3>
-            <h4>HB Media</h4>
-          </div>
-        </Link>
+          </Link>
+        ))}
       </div>
     </div>
   );
