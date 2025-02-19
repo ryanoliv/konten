@@ -12,7 +12,7 @@ const services = [
     imgAlt: "arc architecture website mockup",
     title: "Custom Website Development",
     description:
-      "Your website should work as hard as you do. We build fast, responsive websites that are easy to use and manage. Whether you’re starting fresh or need a redesign, we’ll create a site that showcases your business and gets results.",
+      "Your website should work as hard as you do. We build fast, responsive websites that are easy to use and manage. Whether you’re starting fresh or need a redesign, we’ll create a site that showcases your business and gets the results you're looking for.",
     listTitle: "Perfect for",
     listItems: [
       "Brands ready to take their online presence to the next level",
@@ -25,7 +25,7 @@ const services = [
     imgAlt: "j-learning web app mockup",
     title: "Web App Development",
     description:
-      "Have a big idea for an app? Let us help you make it a reality. We specialise in building custom web applications that are scalable, user-friendly, and built to last. From web and app development to polished interfaces, we’ll handle the heavy lifting.",
+      "Have a big idea for a web app? Let us help you make it a reality. We specialise in building custom web applications that are scalable, user-friendly, and built to last. From web and app development to polished interfaces, we’ll handle the heavy lifting.",
     listTitle: "Our Expertise Includes",
     listItems: [
       "Next.js, React, and JavaScript-based solutions",
@@ -37,7 +37,7 @@ const services = [
     imgAlt: "googel search console performance analytics",
     title: "SEO-Optimised Websites",
     description:
-      "A great-looking website is just the start. If you want people to find you online, you need solid SEO. We’ll help you rank for keywords like “web developer Cape Town” and “web development company South Africa”, ensuring your site doesn’t just sit pretty but brings in traffic that converts.",
+      "A beautiful website is great, but if no one can find it, it won’t help your business grow. That’s where SEO comes in. By optimising your site structure, improving page load speed, and using targeted keywords, we help your website rank higher on Google. Whether you’re competing for search phrases like “best web development Cape Town” or “web development company,” our SEO strategies ensure you attract the right visitors who are actively looking for your services.",
     listTitle: "Here’s What We Offer",
     listItems: [
       "Targeted keyword research to boost your visibility",

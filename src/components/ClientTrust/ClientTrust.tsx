@@ -37,7 +37,9 @@ export default function ClientTrust() {
   return (
     <section className="text-darkestGreen">
       <SectionContainer>
-        <h2 className="text-3xl text-center">Why Our Clients Trust Us</h2>
+        <h2 className="text-3xl text-center">
+          Why Our Clients <span className="italic">Trust</span> Us
+        </h2>
         <div className="flex flex-col md:flex-row gap-10 items-center">
           <div className="flex flex-col">
             {trustValues.map((value, index) => (
@@ -85,7 +87,13 @@ export default function ClientTrust() {
               <p>
                 Our clients trust us because we focus on more than just
                 design—we ensure every site is fast, SEO-friendly, and built for
-                long-term success.
+                long-term success. But trust isn&apos;t just about the end
+                result. It&apos;s about the process, the communication, and the
+                commitment to getting things right. We listen, adapt, and make
+                sure that every project runs smoothly from start to finish.
+                Whether you need a simple site or a complex web application, we
+                take the time to understand your business, your audience, and
+                what success looks like for you.
               </p>
             </div>
             {/* <div className="flex gap-8">

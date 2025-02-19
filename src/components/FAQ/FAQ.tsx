@@ -25,6 +25,16 @@ const questions = [
     answer:
       "Of course! Every site we build follows SEO best practices so you can rank higher on Google. We optimise site speed, structure, and content to help you attract the right visitors and grow your business.",
   },
+  {
+    question: "Do you offer website maintenance?",
+    answer:
+      "Yes! A website isn’t just a one-time project, it needs updates, security patches, and fresh content to stay relevant. We offer ongoing maintenance plans to keep your site running smoothly, so you never have to worry about downtime or broken features.",
+  },
+  {
+    question: "Can I update my website myself?",
+    answer:
+      "Absolutely. We build sites that are easy to manage. Whether you need to add new blog posts, update images, or tweak text, we’ll make sure you have the tools and training to do it yourself. And if you ever need help, we’re just an email away.",
+  },
 ];
 
 export default function FAQ() {

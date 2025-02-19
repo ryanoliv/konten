@@ -55,9 +55,6 @@ export default function Home() {
           <SEO />
         </section>
       </div>
-      {/* <section id="portfolio">
-        <FeaturedWork />
-      </section> */}
       <Testimonials />
       <CTA />
       <section id="home-blog">

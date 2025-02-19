@@ -20,7 +20,7 @@ export default function WorkWithUs() {
           />
           <div className="flex flex-col items-center md:items-start gap-8">
             <div className="flex flex-col gap-2">
-              <h2 className="text-3xl text-center">
+              <h2 className="text-3xl text-center md:text-left">
                 <span className="italic font-light">Work</span> With Us
               </h2>
               <p className="text-lg max-w-[550px] font-light">

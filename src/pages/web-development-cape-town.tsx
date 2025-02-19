@@ -5,7 +5,6 @@ import ClientTrust from "@/components/ClientTrust/ClientTrust";
 import WebDevServices from "@/components/WebDevServices/WebDevServices";
 import OurProcess from "@/components/OurProcess/OurProcess";
 import FAQ from "@/components/FAQ/FAQ";
-import CTA from "@/components/CTA/CTA";
 import CTA2 from "@/components/CTA2/CTA2";
 
 export default function Page() {
@@ -19,7 +18,7 @@ export default function Page() {
         />
         <meta
           name="description"
-          content="Craft custom websites with Konten, your Cape Town-based design and Next.js development partners. Elevate your brand today."
+          content="Need a web developer in Cape Town? We build custom websites and web apps that look great, load fast, and help your business grow. No templates—just smart, SEO-friendly solutions tailored to you."
         />
       </Head>
       <div className="bg-white text-darkestGreen">
