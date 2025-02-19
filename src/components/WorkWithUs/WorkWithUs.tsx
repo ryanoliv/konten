@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { workWithUsImg } from "@/utils/imageImports";
 import { useLocomotiveScroll } from "../LocomotiveScroll/LocomotiveScrollContext";
 import SectionContainer from "../SectionContainer/SectionContainer";
 
@@ -10,8 +11,9 @@ export default function WorkWithUs() {
       <SectionContainer>
         <div className="flex flex-col md:flex-row gap-10 items-center">
           <Image
-            src="/pngs/mockup.png"
+            src={workWithUsImg}
             alt="konten mobile mockup"
+            placeholder="blur"
             width={600}
             height={600}
             className="rounded-lg shadow-[1px_1px_32px_rgba(255,255,255,0.15)]"

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import OpacityParagraph from "../OpacityParagraph/OpacityParagraph";
 
 export default function Development() {
@@ -6,7 +7,9 @@ export default function Development() {
   return (
     <div className="container">
       <div className="flex flex-col gap-10 py-18 md:py-32 items-center">
-        <h2 className="page-title">Web development</h2>
+        <Link href="/web-development-cape-town">
+          <h2 className="page-title">Web development</h2>
+        </Link>
         <OpacityParagraph paragraphText={paragraphText} />
       </div>
     </div>

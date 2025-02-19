@@ -1,9 +1,14 @@
 import Image from "next/image";
+import {
+  arcArchitectureImg,
+  webAppImg,
+  googleSearchConsoleImg,
+} from "@/utils/imageImports";
 import SectionContainer from "../SectionContainer/SectionContainer";
 
 const services = [
   {
-    imgSrc: "/pngs/arc.png",
+    imgSrc: arcArchitectureImg,
     imgAlt: "arc architecture website mockup",
     title: "Custom Website Development",
     description:
@@ -16,7 +21,7 @@ const services = [
   },
 
   {
-    imgSrc: "/pngs/web-app.png",
+    imgSrc: webAppImg,
     imgAlt: "j-learning web app mockup",
     title: "Web App Development",
     description:
@@ -28,7 +33,7 @@ const services = [
     ],
   },
   {
-    imgSrc: "/pngs/google-search-console.png",
+    imgSrc: googleSearchConsoleImg,
     imgAlt: "googel search console performance analytics",
     title: "SEO-Optimised Websites",
     description:
@@ -62,6 +67,7 @@ export default function WebDevServices() {
               <Image
                 src={service.imgSrc}
                 alt={service.imgAlt}
+                placeholder="blur"
                 width={750}
                 height={550}
                 className="rounded-lg aspect-3/2 object-cover border shadow"

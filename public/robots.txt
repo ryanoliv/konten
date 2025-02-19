@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://konten.dev
+Host: https://www.konten.dev
 
 # Sitemaps
-Sitemap: https://konten.dev/sitemap.xml
+Sitemap: https://www.konten.dev/sitemap.xml

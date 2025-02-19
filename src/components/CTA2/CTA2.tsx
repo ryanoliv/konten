@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { ctaSectionImg } from "@/utils/imageImports";
 import { useLocomotiveScroll } from "../LocomotiveScroll/LocomotiveScrollContext";
 import SectionContainer from "../SectionContainer/SectionContainer";
 
@@ -8,8 +9,9 @@ export default function CTA2() {
   return (
     <section className="relative py-20 text-white">
       <Image
-        src="/hero-images/capetown-1.jpg"
+        src={ctaSectionImg}
         alt="signal hill with table mountain in the background"
+        placeholder="blur"
         fill
         className="object-cover"
       />

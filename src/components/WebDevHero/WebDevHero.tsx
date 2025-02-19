@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import heroImg from "../../../public/hero-images/capetown-2.jpg";
+import { webDevHeroImg } from "@/utils/imageImports";
 import { useLocomotiveScroll } from "../LocomotiveScroll/LocomotiveScrollContext";
 
 export default function WebDevHero() {
@@ -8,7 +8,7 @@ export default function WebDevHero() {
   return (
     <section className="px-4 text-white relative min-h-screen flex items-center justify-center border-y border-zinc-600">
       <Image
-        src={heroImg}
+        src={webDevHeroImg}
         alt="lions head and table mountain from a drone image"
         fill
         className="object-cover"
@@ -29,9 +29,9 @@ export default function WebDevHero() {
             e-commerce platform, we&apos;ve got you.
           </p>
         </div>
-        <Link href="/#contact" passHref legacyBehavior>
+        <Link href="/#webdevservices" passHref legacyBehavior>
           <a
-            onClick={(e) => handleLinkClick(e, "#contact")}
+            onClick={(e) => handleLinkClick(e, "/#webdevservices")}
             className="py-4 px-6 border rounded-full font-medium uppercase text-xs bg-white text-darkestGreen shadow-md hover:bg-transparent hover:text-white transition-colors"
           >
             See our services
