@@ -11,6 +11,7 @@ import Testimonials from "@/components/Testimonials/Testimonials";
 import CTA from "@/components/CTA/CTA";
 // import HomeBlog from "@/components/HomeBlog/HomeBlog";
 import Contact from "@/components/Contact/Contact";
+import HeroBackgroundImg from "@/components/HeroBackgroundImg/HeroBackgroundImg";
 
 const UX = dynamic(() => import("@/components/UX/UX"));
 const UI = dynamic(() => import("@/components/UI/UI"));

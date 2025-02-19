@@ -303,7 +303,7 @@ export default function BlogPost() {
                   </Link>
                   ,{" "}
                   <Link
-                    href="https://www.php.net/manual/en/intro-whatis.php"
+                    href="https://en.wikipedia.org/wiki/PHP"
                     target="_blank"
                     rel="noopener"
                     className="light-green"

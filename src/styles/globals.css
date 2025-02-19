@@ -28,7 +28,7 @@
 
 .page-transition-enter-active {
   opacity: 1;
-  transition: opacity 500ms; /* Adjust duration as needed */
+  transition: opacity 500ms;
 }
 
 .page-transition-exit {
@@ -37,14 +37,18 @@
 
 .page-transition-exit-active {
   opacity: 0;
-  transition: opacity 500ms; /* Adjust duration as needed */
+  transition: opacity 500ms;
 }
 
 html,
 body {
-  /* height: 100%; */
   overflow-x: hidden;
   /* scroll-behavior: smooth; */
+}
+
+/* Apply DM Sans as the default font globally */
+body {
+  @apply font-sans;
 }
 
 body {
@@ -61,8 +65,6 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
-/* styles/globals.css */
 
 .content {
   position: relative;
@@ -336,6 +338,13 @@ html.lenis {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @apply font-grotesque;
 }
 
 h5 {
