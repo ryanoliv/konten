@@ -33,8 +33,9 @@ export default function OurProcess() {
     <section>
       <SectionContainer>
         <div className="flex flex-col gap-2 items-center">
-          <h2 className="text-3xl text-center">
-            Our Process From Idea to Launch
+          <h2 className="text-4xl text-center font-medium">
+            Our Process From <span className="italic font-normal">Idea</span> to{" "}
+            <span className="italic font-normal">Launch</span>
           </h2>
           <p className="text-center">
             We believe in keeping things simple and straightforward. Here&apos;s
@@ -57,7 +58,7 @@ export default function OurProcess() {
                   index === steps.length - 1 ? "border-none pb-0" : ""
                 }`}
               >
-                <h3 className="text-xl">{step.title}</h3>
+                <h3 className="font-sans text-xl">{step.title}</h3>
                 <p className="max-w-full md:max-w-[480px] text-gray-600 text-sm leading-relaxed">
                   {step.description}
                 </p>

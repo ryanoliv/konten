@@ -47,7 +47,7 @@ export default function FAQ() {
   return (
     <section>
       <SectionContainer>
-        <h2 className="text-3xl text-center">
+        <h2 className="text-4xl text-center font-medium">
           Questions? We&apos;ve Got Answers
         </h2>
         <div className="flex flex-col">

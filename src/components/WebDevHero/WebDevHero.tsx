@@ -20,9 +20,9 @@ export default function WebDevHero() {
       <div className="bg-gradient-to-b from-red-600 via-lime-700 to-blue-700 absolute inset-0 opacity-50 z-10 mix-blend-multiply"></div>
       <div className="relative flex flex-col gap-12 items-center z-10">
         <div className="flex flex-col gap-4 items-center max-w-[605px]">
-          <h1 className="font-grotesque text-4xl md:text-5xl text-center leading-tight">
-            Custom <span className="italic font-light">Web Development</span> &{" "}
-            <span className="italic font-light">Design</span> in Cape Town
+          <h1 className="text-4xl font-semibold md:text-6xl text-center">
+            Custom <span className="italic font-normal">Web Development</span> &{" "}
+            <span className="italic font-normal">Design</span> in Cape Town
           </h1>
           <p className="text-sm text-center tracking-wide">
             We&apos;re dedicated to helping businesses create websites and web
@@ -33,7 +33,7 @@ export default function WebDevHero() {
         </div>
         <Link href="/#webdevservices" passHref legacyBehavior>
           <a
-            onClick={(e) => handleLinkClick(e, "/#webdevservices")}
+            onClick={(e) => handleLinkClick(e, "#webdevservices")}
             className="py-4 px-6 border rounded-full font-medium uppercase text-xs bg-white text-darkestGreen shadow-md hover:bg-transparent hover:text-white transition-colors"
           >
             See our services

@@ -77,25 +77,66 @@ export const LocomotiveScrollProvider: React.FC<
     [locomotiveScroll]
   );
 
+  // const handleLinkClick = useCallback(
+  //   (e: React.MouseEvent<HTMLAnchorElement>, target: string | number) => {
+  //     e.preventDefault();
+
+  //     if (target === 0) {
+  //       if (router.pathname !== "/") {
+  //         router.push("/");
+  //       } else {
+  //         window.scrollTo({ top: 0, behavior: "smooth" });
+  //       }
+  //     } else {
+  //       if (router.pathname !== "/") {
+  //         router.push(`/${target}`);
+  //       } else {
+  //         scrollTo(target);
+  //       }
+  //     }
+  //   },
+  //   [router, scrollTo]
+  // );
+
   const handleLinkClick = useCallback(
     (e: React.MouseEvent<HTMLAnchorElement>, target: string | number) => {
       e.preventDefault();
 
-      if (target === 0) {
-        if (router.pathname !== "/") {
-          router.push("/");
-        } else {
-          window.scrollTo({ top: 0, behavior: "smooth" });
+      const isRootPage = router.pathname === "/";
+      const isWebDevPage = router.pathname === "/web-development-cape-town";
+      const isHashLink = typeof target === "string" && target.startsWith("#");
+
+      if (isHashLink) {
+        const element = document.querySelector(target);
+
+        if (element) {
+          // If on the same page, scroll smoothly
+          locomotiveScroll?.scrollTo(element);
+        } else if (!isRootPage) {
+          // If navigating to the root page, push first, then scroll
+          router.push(`/${target}`).then(() => {
+            setTimeout(() => {
+              const newElement = document.querySelector(target);
+              if (newElement) {
+                locomotiveScroll?.scrollTo(newElement);
+              }
+            }, 500); // Delay to ensure Locomotive Scroll initializes
+          });
         }
       } else {
-        if (router.pathname !== "/") {
-          router.push(`/${target}`);
+        // Handle scrolling to top or navigating home
+        if (target === 0) {
+          if (isRootPage) {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          } else {
+            router.push("/");
+          }
         } else {
-          scrollTo(target);
+          router.push(`/${target}`);
         }
       }
     },
-    [router, scrollTo]
+    [router, locomotiveScroll]
   );
 
   return (

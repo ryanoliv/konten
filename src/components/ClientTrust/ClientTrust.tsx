@@ -37,8 +37,8 @@ export default function ClientTrust() {
   return (
     <section className="text-darkestGreen">
       <SectionContainer>
-        <h2 className="text-3xl text-center">
-          Why Our Clients <span className="italic">Trust</span> Us
+        <h2 className="text-4xl text-center font-medium">
+          Why Our Clients <span className="italic font-normal">Trust</span> Us
         </h2>
         <div className="flex flex-col md:flex-row gap-10 items-center">
           <div className="flex flex-col">
@@ -58,14 +58,14 @@ export default function ClientTrust() {
                   height={35}
                 />
                 <div className="flex flex-col text-sm">
-                  <h3 className="font-semibold">{value.title}</h3>
+                  <h3 className="font-sans font-semibold">{value.title}</h3>
                   <p className="text-darkGreen">{value.description}</p>
                 </div>
               </div>
             ))}
           </div>
           <div className="flex flex-col gap-8">
-            <div className="flex flex-col gap-4 max-w-[440px]">
+            <div className="flex flex-col gap-4 max-w-[470px]">
               <div className="flex gap-1">
                 {[
                   Array(5)
@@ -81,7 +81,7 @@ export default function ClientTrust() {
                     )),
                 ]}
               </div>
-              <h3 className="text-xl font-medium">
+              <h3 className="font-sans text-xl font-medium">
                 Trust is built on experience, reliability, and results
               </h3>
               <p>
@@ -96,26 +96,6 @@ export default function ClientTrust() {
                 what success looks like for you.
               </p>
             </div>
-            {/* <div className="flex gap-8">
-              <Image
-                src="/client-logos/firetail.svg"
-                alt="firetail fly logo"
-                width={100}
-                height={33}
-              />
-              <Image
-                src="/client-logos/hbmedia.svg"
-                alt="hb media logo"
-                width={100}
-                height={33}
-              />
-              <Image
-                src="/client-logos/jlearning.svg"
-                alt="j-learning logo"
-                width={118}
-                height={33}
-              />
-            </div> */}
           </div>
         </div>
       </SectionContainer>

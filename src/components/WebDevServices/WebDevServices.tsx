@@ -57,7 +57,9 @@ export default function WebDevServices() {
   return (
     <section className="text-darkestGreen">
       <SectionContainer>
-        <h2 className="text-3xl text-center">What We Can Help You With</h2>
+        <h2 className="text-4xl text-center font-medium">
+          What We Can <span className="italic font-normal">Help</span> You With
+        </h2>
         <div className="flex flex-col gap-20 md:gap-10">
           {services.map((service, index) => (
             <div
@@ -74,12 +76,12 @@ export default function WebDevServices() {
               />
               <div className="flex flex-col gap-8">
                 <div className="flex flex-col gap-4 max-w-[585px]">
-                  <h3 className="text-2xl">{service.title}</h3>
+                  <h3 className="font-sans text-2xl">{service.title}</h3>
                   <p className="">{service.description}</p>
                 </div>
                 {service.listTitle && service.listItems && (
                   <div className="flex flex-col">
-                    <h3 className="underline">{service.listTitle}</h3>
+                    <h3 className="font-sans underline">{service.listTitle}</h3>
                     <ul className="list-disc ml-4 text-sm">
                       {service.listItems.map((item, i) => (
                         <li key={i}>{item}</li>

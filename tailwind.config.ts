@@ -18,8 +18,8 @@ const config: Config = {
         yellow: "#cca400",
       },
       fontFamily: {
-        sans: ["DM Sans", "sans-serif"],
-        grotesque: ["Darker Grotesque", "sans-serif"],
+        sans: ["var(--font-sans)", "sans-serif"],
+        grotesque: ["var(--font-grotesque)", "sans-serif"],
         franchise: ["Franchise", "sans-serif"],
       },
       backgroundImage: {

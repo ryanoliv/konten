@@ -40,15 +40,14 @@
   transition: opacity 500ms;
 }
 
+html {
+  font-family: var(--font-sans);
+}
+
 html,
 body {
   overflow-x: hidden;
   /* scroll-behavior: smooth; */
-}
-
-/* Apply DM Sans as the default font globally */
-body {
-  @apply font-sans;
 }
 
 body {
@@ -343,8 +342,10 @@ html.lenis {
 h1,
 h2,
 h3,
-h4 {
-  @apply font-grotesque;
+h4,
+h5,
+h6 {
+  font-family: var(--font-grotesque);
 }
 
 h5 {

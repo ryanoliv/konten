@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <LocomotiveScrollProvider>
-      <div className={dmSans.variable}>
+      <div className={`${dmSans.className} ${darkerGrotesque.variable}`}>
         {/* <Loader /> */}
         <div
           className={`page-transition ${
