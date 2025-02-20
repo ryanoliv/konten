@@ -12,8 +12,10 @@ export default function WebDevHero() {
         alt="lions head and table mountain from a drone image"
         fill
         className="object-cover"
+        priority
         placeholder="blur"
         quality={80}
+        sizes="100vw"
       />
       <div className="bg-gradient-to-b from-red-600 via-lime-700 to-blue-700 absolute inset-0 opacity-50 z-10 mix-blend-multiply"></div>
       <div className="relative flex flex-col gap-12 items-center z-10">
