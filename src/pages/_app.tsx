@@ -3,12 +3,11 @@ import { useLocomotiveScroll } from "@/hooks/useLocomotiveScroll";
 import "@/styles/globals.css";
 import { dmSans, darkerGrotesque } from "@/utils/fonts";
 // import Loader from "@/components/Loader/Loader";
-import dynamic from "next/dynamic";
 import Nav from "@/components/Nav/Nav";
 import type { AppProps } from "next/app";
-import HeroBackgroundImg from "@/components/HeroBackgroundImg/HeroBackgroundImg";
+// import HeroBackgroundImg from "@/components/HeroBackgroundImg/HeroBackgroundImg";
 import { LocomotiveScrollProvider } from "@/components/LocomotiveScroll/LocomotiveScrollContext";
-const Footer = dynamic(() => import("@/components/Footer/Footer"));
+import Footer from "@/components/Footer/Footer";
 
 export default function App({ Component, pageProps }: AppProps) {
   const pageLoading = usePageLoading();
@@ -25,7 +24,7 @@ export default function App({ Component, pageProps }: AppProps) {
               : "page-transition-enter-active"
           }`}
         >
-          <HeroBackgroundImg />
+          {/* <HeroBackgroundImg /> */}
           <header className="fixed top-0 w-full z-20">
             <Nav />
           </header>

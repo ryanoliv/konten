@@ -50,7 +50,7 @@ export default function OurProcess() {
                   {step.number}
                 </div>
                 {index !== steps.length - 1 && (
-                  <div className="w-[2px] h-[80px] bg-white"></div>
+                  <div className="w-[2px] h-[115px] md:h-[80px] bg-white"></div>
                 )}
               </div>
               <div

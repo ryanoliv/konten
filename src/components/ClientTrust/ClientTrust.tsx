@@ -65,7 +65,7 @@ export default function ClientTrust() {
             ))}
           </div>
           <div className="flex flex-col gap-8">
-            <div className="flex flex-col gap-4 max-w-[470px]">
+            <div className="flex flex-col gap-4 items-center md:items-start max-w-[490px]">
               <div className="flex gap-1">
                 {[
                   Array(5)
@@ -81,7 +81,7 @@ export default function ClientTrust() {
                     )),
                 ]}
               </div>
-              <h3 className="font-sans text-xl font-medium">
+              <h3 className="font-sans text-xl font-medium text-center md:text-start">
                 Trust is built on experience, reliability, and results
               </h3>
               <p>

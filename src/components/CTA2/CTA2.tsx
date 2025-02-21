@@ -19,7 +19,7 @@ export default function CTA2() {
       <SectionContainer>
         <div className="relative flex flex-col items-center gap-8 z-10">
           <div className="flex flex-col gap-2 items-center max-w-[550px]">
-            <h2 className="text-2xl md:text-5xl text-center font-medium">
+            <h2 className="text-3xl md:text-5xl text-center font-medium">
               Let&apos;s Build Something Amazing
             </h2>
             <p className="text-center">

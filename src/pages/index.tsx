@@ -23,7 +23,7 @@ const HomeBlog = dynamic(() => import("@/components/HomeBlog/HomeBlog"));
 
 export default function Home() {
   return (
-    <>
+    <div className="relative">
       <Head>
         <title>Website Developers in Cape Town | Konten</title>
         <link rel="canonical" href="https://www.konten.dev" />
@@ -32,6 +32,7 @@ export default function Home() {
           content="Craft custom websites with Konten, your Cape Town-based design and Next.js development partners. Elevate your brand today."
         />
       </Head>
+      <HeroBackgroundImg />
       <section id="home">
         <Hero />
       </section>
@@ -63,6 +64,6 @@ export default function Home() {
       <section id="contact">
         <Contact />
       </section>
-    </>
+    </div>
   );
 }

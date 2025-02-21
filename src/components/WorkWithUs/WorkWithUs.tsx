@@ -23,7 +23,7 @@ export default function WorkWithUs() {
               <h2 className="text-4xl text-center md:text-left font-medium">
                 <span className="italic font-normal">Work</span> With Us
               </h2>
-              <p className="max-w-[550px] font-light">
+              <p className="max-w-[550px] font-light text-center md:text-start">
                 We&apos;re not here to churn out cookie-cutter websites.
                 We&apos;re about creating solutions that fit your business.
                 Based in Cape Town, our team is small enough to give you

@@ -70,6 +70,7 @@ export default function WebDevServices() {
                 src={service.imgSrc}
                 alt={service.imgAlt}
                 placeholder="blur"
+                quality={80}
                 width={750}
                 height={550}
                 className="rounded-lg aspect-3/2 object-cover border shadow"

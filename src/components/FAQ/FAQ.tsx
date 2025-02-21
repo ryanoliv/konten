@@ -1,5 +1,3 @@
-"use client";
-
 import { useState } from "react";
 import Image from "next/image";
 import SectionContainer from "../SectionContainer/SectionContainer";
@@ -75,7 +73,7 @@ export default function FAQ() {
                 />
               </button>
               <div
-                className={`overflow-hidden transition-[max-height] ${
+                className={`overflow-hidden transition-[max-height] duration-300 ${
                   openIndex === index ? "max-h-40 mt-2" : "max-h-0"
                 }`}
               >
