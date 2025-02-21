@@ -47,7 +47,7 @@ export default function ClientTrust() {
             {trustValues.map((value, index) => (
               <div
                 key={index}
-                className={`bg-white relative flex gap-4 p-4 border rounded-lg max-w-[430px] ${
+                className={`bg-white relative flex items-center gap-4 p-4 border rounded-lg max-w-[445px] ${
                   index === 0
                     ? "rotate-2 shadow-lg z-10 translate-y-1"
                     : "shadow-sm"

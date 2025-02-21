@@ -85,12 +85,12 @@ export default function WebDevServices() {
                     <h3 className="font-sans underline">{service.listTitle}</h3>
                     <ul className="text-sm">
                       {service.listItems.map((item, i) => (
-                        <li key={i} className="flex gap-2">
+                        <li key={i} className="flex gap-2 items-start">
                           <Image
                             src="/pngs/right-arrow.png"
                             alt="green arrow pointing to the right"
                             width={15}
-                            height={20}
+                            height={15}
                           />
                           {item}
                         </li>
