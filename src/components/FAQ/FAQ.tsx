@@ -6,7 +6,7 @@ const questions = [
   {
     question: "What's the difference between web design and development?",
     answer:
-      "Think of web design as the blueprint—it’s all about how your site looks and feels. Web development is the construction—it’s what makes everything work behind the scenes. We handle both, so your site isn’t just good-looking but also fast, secure, and functional.",
+      "Think of web design as the blueprint - it’s all about how your site looks and feels. Web development is the construction - it’s what makes everything work behind the scenes. We handle both, so your site isn’t just good-looking but also fast, secure, and functional.",
   },
   {
     question: "How much will my website cost?",

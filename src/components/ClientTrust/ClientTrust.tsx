@@ -1,10 +1,12 @@
-import tailored from "../../../public/svgs/tailored.svg";
-// import tailored from "../../../public/pngs/scissor.png";
-import expertise from "../../../public/svgs/expertise.svg";
-import seo from "../../../public/svgs/seo.svg";
-import fullSupport from "../../../public/svgs/full-support.svg";
-import SectionContainer from "../SectionContainer/SectionContainer";
 import Image from "next/image";
+import {
+  tailored,
+  expertise,
+  seo,
+  fullSupport,
+  starRating,
+} from "@/utils/imageImports";
+import SectionContainer from "../SectionContainer/SectionContainer";
 
 const trustValues = [
   {
@@ -28,7 +30,7 @@ const trustValues = [
   {
     title: "Full Support",
     description:
-      "From the first idea to the final launch—and beyond—we're here to help.",
+      "From the first idea to the final launch and beyond - we're here to help.",
     icon: fullSupport,
   },
 ];
@@ -54,8 +56,9 @@ export default function ClientTrust() {
                 <Image
                   src={value.icon}
                   alt={`${value.title} icon`}
-                  width={35}
-                  height={35}
+                  quality={80}
+                  width={37}
+                  height={37}
                 />
                 <div className="flex flex-col text-sm">
                   <h3 className="font-sans font-semibold">{value.title}</h3>
@@ -73,10 +76,11 @@ export default function ClientTrust() {
                     .map((_, i) => (
                       <Image
                         key={i}
-                        src="/pngs/star.png"
+                        src={starRating}
                         alt="5 star rating"
                         width={20}
                         height={20}
+                        quality={80}
                       />
                     )),
                 ]}
@@ -85,8 +89,8 @@ export default function ClientTrust() {
                 Trust is built on experience, reliability, and results
               </h3>
               <p>
-                Our clients trust us because we focus on more than just
-                design—we ensure every site is fast, SEO-friendly, and built for
+                Our clients trust us because we focus on more than just design -
+                we ensure every site is fast, SEO-friendly, and built for
                 long-term success. But trust isn&apos;t just about the end
                 result. It&apos;s about the process, the communication, and the
                 commitment to getting things right. We listen, adapt, and make

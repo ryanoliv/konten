@@ -14,6 +14,7 @@ export default function WorkWithUs() {
             src={workWithUsImg}
             alt="konten mobile mockup"
             placeholder="blur"
+            quality={80}
             width={600}
             height={600}
             className="rounded-lg shadow-[1px_1px_32px_rgba(255,255,255,0.15)]"

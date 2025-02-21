@@ -11,7 +11,7 @@ export default function WebDevHero() {
         src={webDevHeroImg}
         alt="lions head and table mountain from a drone image"
         fill
-        className="object-cover"
+        className="object-cover object-[60%_100%] md:object-bottom"
         priority
         placeholder="blur"
         quality={80}

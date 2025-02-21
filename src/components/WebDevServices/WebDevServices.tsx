@@ -83,9 +83,17 @@ export default function WebDevServices() {
                 {service.listTitle && service.listItems && (
                   <div className="flex flex-col">
                     <h3 className="font-sans underline">{service.listTitle}</h3>
-                    <ul className="list-disc ml-4 text-sm">
+                    <ul className="text-sm">
                       {service.listItems.map((item, i) => (
-                        <li key={i}>{item}</li>
+                        <li key={i} className="flex gap-2">
+                          <Image
+                            src="/pngs/right-arrow.png"
+                            alt="green arrow pointing to the right"
+                            width={15}
+                            height={20}
+                          />
+                          {item}
+                        </li>
                       ))}
                     </ul>
                   </div>
