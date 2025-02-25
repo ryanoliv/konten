@@ -6,6 +6,7 @@ import WebDevServices from "@/components/WebDevServices/WebDevServices";
 import OurProcess from "@/components/OurProcess/OurProcess";
 import FAQ from "@/components/FAQ/FAQ";
 import CTA2 from "@/components/CTA2/CTA2";
+import LogoCarousel from "@/components/LogoCarousel/LogoCarousel";
 
 export default function Page() {
   return (
@@ -25,6 +26,7 @@ export default function Page() {
         <WebDevHero />
         <WorkWithUs />
         <ClientTrust />
+        <LogoCarousel />
         <div id="webdevservices">
           <WebDevServices />
         </div>

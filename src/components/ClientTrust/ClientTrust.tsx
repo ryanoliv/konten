@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   tailored,
   expertise,
@@ -89,15 +90,15 @@ export default function ClientTrust() {
                 Trust is built on experience, reliability, and results
               </h3>
               <p>
-                Our clients trust us because we focus on more than just design -
-                we ensure every site is fast, SEO-friendly, and built for
-                long-term success. But trust isn&apos;t just about the end
-                result. It&apos;s about the process, the communication, and the
-                commitment to getting things right. We listen, adapt, and make
-                sure that every project runs smoothly from start to finish.
-                Whether you need a simple site or a complex web application, we
-                take the time to understand your business, your audience, and
-                what success looks like for you.
+                Our <Link href="/#portfolio">clients</Link> trust us because we
+                focus on more than just design - we ensure every site is fast,
+                SEO-friendly, and built for long-term success. But trust
+                isn&apos;t just about the end result. It&apos;s about the
+                process, the communication, and the commitment to getting things
+                right. We listen, adapt, and make sure that every project runs
+                smoothly from start to finish. Whether you need a simple site or
+                a complex web application, we take the time to understand your
+                business, your audience, and what success looks like for you.
               </p>
             </div>
           </div>

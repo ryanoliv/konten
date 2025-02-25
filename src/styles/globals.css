@@ -9,6 +9,7 @@
   --clr-darkest-green: #040504;
 
   --clr-white: #edf3f5;
+  /* --clr-white: rgb(237, 243, 245); */
   --clr-grey: #d8dbe2;
 
   --clr-yellow: #cca400;
@@ -47,6 +48,49 @@
 .page-transition-exit-active {
   opacity: 0;
   transition: opacity 500ms;
+}
+
+@keyframes slides {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Gradient fade effect on both ends */
+.logos::before,
+.logos::after {
+  position: absolute;
+  top: 0;
+  content: "";
+  width: 250px;
+  height: 100%;
+  z-index: 2;
+}
+
+.logos::before {
+  left: 0;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    rgb(237, 243, 245)
+  );
+}
+
+.logos::after {
+  right: 0;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgb(237, 243, 245)
+  );
+}
+
+/* Ensures infinite scrolling */
+.logo_items {
+  animation: slides 45s linear infinite;
 }
 
 html {
@@ -693,5 +737,10 @@ h6 {
 
   .blog-title-design-dev {
     font-size: 20px !important;
+  }
+
+  .logos::before,
+  .logos::after {
+    width: 100px;
   }
 }
