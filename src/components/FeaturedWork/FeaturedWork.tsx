@@ -7,6 +7,8 @@ const projects = [
     href: "https://alkemi.global",
     imgBoxSrc: "./work/alkemi-box.svg",
     imgBoxAlt: "gray rectangle box",
+    imgW: 403,
+    imgH: 144,
     logoSrc: "./work/alkemi-logo.svg",
     logoAlt: "alkemi collective logo",
     services: ["Web Development", "SEO"],
@@ -16,6 +18,8 @@ const projects = [
     href: "https://hbmedia.io",
     imgBoxSrc: "./work/hbmedia-box.svg",
     imgBoxAlt: "blurred gradient box",
+    imgW: 403,
+    imgH: 134,
     logoSrc: "./work/hbmedia-logo.svg",
     logoAlt: "hb media logo",
     services: ["UX", "UI", "Web Development", "SEO"],
@@ -25,6 +29,8 @@ const projects = [
     href: "https://www.rootsandwings.education/",
     imgBoxSrc: "./work/roots+wings-box.svg",
     imgBoxAlt: "white background box",
+    imgW: 282,
+    imgH: 158,
     logoSrc: "./work/roots+wings-logo.svg",
     logoAlt: "Roots & Wings logo",
     services: ["UX", "UI", "Web Development", "SEO"],
@@ -34,6 +40,8 @@ const projects = [
     href: "https://firetailfly.com/",
     imgBoxSrc: "./work/firetail-box.svg",
     imgBoxAlt: "blue background box",
+    imgW: 403,
+    imgH: 134,
     logoSrc: "./work/firetail-logo.svg",
     logoAlt: "firetail fly logo",
     services: ["UX", "UI", "Web Development", "SEO"],
@@ -65,8 +73,8 @@ export default function FeaturedWork() {
                 <Image
                   src={project.logoSrc}
                   alt={project.logoAlt}
-                  width={403}
-                  height={132}
+                  width={project.imgW}
+                  height={project.imgH}
                   className={styles.featuredWorkLogo}
                 />
               </div>

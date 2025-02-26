@@ -1,8 +1,11 @@
+import { useRouter } from "next/router";
 import styles from "./Footer.module.scss";
 import Link from "next/link";
 
 export default function Footer() {
+  const router = useRouter();
   const year = new Date().getFullYear();
+
   return (
     <div className={styles.footer}>
       <div className={styles.footerTop}>
@@ -80,14 +83,27 @@ export default function Footer() {
         <Link href="/privacy-policy">Privacy Policy</Link>
         <Link href="/terms-of-service">Terms of Service</Link>
       </div>
-      <div className="mt-8">
-        <p className="text-sm text-center text-[#d8dbe2]">
+      <div className="mt-8 flex flex-col gap-4 text-sm text-center text-[#d8dbe2]">
+        <p className="">
           Listed in the South African{" "}
           <Link href="https://www.web-design.co.za/" className="underline">
             web design
           </Link>{" "}
           company directory.
         </p>
+        {router.pathname === "/web-development-cape-town" && (
+          <p>
+            Featured on{" "}
+            <Link
+              href="https://www.designrush.com/agency/profile/konten"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+            >
+              DesignRush.
+            </Link>
+          </p>
+        )}
       </div>
     </div>
   );

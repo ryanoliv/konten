@@ -93,6 +93,72 @@
   animation: slides 45s linear infinite;
 }
 
+/* .cards {
+  position: relative;
+}
+
+.card {
+  position: relative;
+  width: 468px;
+  height: 261px;
+  background-color: rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  transition: transform 300ms ease-in-out;
+  will-change: transform, opacity;
+}
+
+.card:hover {
+  transform: scale(1.007);
+}
+
+.card::before,
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.card::before {
+  background: radial-gradient(
+    800px circle at var(--mouse-x) var(--mouse-y),
+    rgba(255, 255, 255, 0.06),
+    transparent 40%
+  );
+  z-index: 3;
+}
+
+.card::after {
+  background: radial-gradient(
+    600px circle at var(--mouse-x) var(--mouse-y),
+    rgba(255, 255, 255, 0.3),
+    transparent 40%
+  );
+  z-index: 1;
+}
+
+.card:hover::before,
+.card:hover::after {
+  opacity: 1;
+}
+
+.card > .card-content {
+  position: relative;
+  background-color: #212121;
+  height: calc(100% - 2px);
+  width: calc(100% - 2px);
+  border-radius: inherit;
+  margin: 1px;
+  padding: 1rem;
+  z-index: 2;
+} */
+
 html {
   font-family: var(--font-sans);
 }

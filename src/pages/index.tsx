@@ -2,16 +2,12 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import Hero from "@/components/Hero/Hero";
 import Services from "@/components/Services/Services";
-// import UX from "@/components/UX/UX";
-// import UI from "@/components/UI/UI";
-// import Development from "@/components/Development/Development";
-// import SEO from "@/components/SEO/SEO";
 import FeaturedWork from "@/components/FeaturedWork/FeaturedWork";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import CTA from "@/components/CTA/CTA";
-// import HomeBlog from "@/components/HomeBlog/HomeBlog";
 import Contact from "@/components/Contact/Contact";
 import HeroBackgroundImg from "@/components/HeroBackgroundImg/HeroBackgroundImg";
+// import ServicesCards from "@/components/ServicesCards/ServicesCards";
 
 const UX = dynamic(() => import("@/components/UX/UX"));
 const UI = dynamic(() => import("@/components/UI/UI"));
@@ -36,11 +32,12 @@ export default function Home() {
       <section id="home">
         <Hero />
       </section>
-      <section id="services">
-        <Services />
-      </section>
       <section id="portfolio">
         <FeaturedWork />
+      </section>
+      <section id="services">
+        <Services />
+        {/* <ServicesCards /> */}
       </section>
       <div className="dark-bg">
         <section id="ux-design">
