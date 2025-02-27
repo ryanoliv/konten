@@ -218,18 +218,20 @@ export default function BlogPost() {
             <div className="blog-text-container">
               <h2>Understanding Web Development</h2>
               <p>
-                Web development is the backbone of any website, the engine under
-                the hood that makes everything run smoothly and efficiently. It
-                encompasses the coding and programming that enable website
-                functionality, from the simplest static pages to the most
-                complex web-based applications. Web developers work behind the
-                scenes to bring web designers&apos; visions to life, ensuring
-                that websites not only look good but also function flawlessly
-                across various browsers and devices. This discipline is divided
-                into three main areas: front-end development (client-side),
-                back-end development (server-side), and full-stack development
-                (covering both). Each plays a crucial role in the creation and
-                maintenance of the web.
+                <Link href="/web-development-cape-town" className="light-green">
+                  Web development
+                </Link>{" "}
+                is the backbone of any website, the engine under the hood that
+                makes everything run smoothly and efficiently. It encompasses
+                the coding and programming that enable website functionality,
+                from the simplest static pages to the most complex web-based
+                applications. Web developers work behind the scenes to bring web
+                designers&apos; visions to life, ensuring that websites not only
+                look good but also function flawlessly across various browsers
+                and devices. This discipline is divided into three main areas:
+                front-end development (client-side), back-end development
+                (server-side), and full-stack development (covering both). Each
+                plays a crucial role in the creation and maintenance of the web.
               </p>
               <h3>Definition and Core Responsibilities</h3>
               <p>

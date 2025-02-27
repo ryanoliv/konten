@@ -87,6 +87,13 @@ export default function Document() {
           content="nfIL2QGDCqTW6QJP2ahcHjGzYeY7CD73Ygm8n0Je6vI"
         />
 
+        <link
+          rel="sitemap"
+          type="application/xml"
+          title="Sitemap"
+          href="/sitemap.xml"
+        />
+
         {/* Google tag (gtag.js)  */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_TRACKING_ID}`}

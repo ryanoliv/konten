@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./Hero.module.scss";
 
 export default function Hero3() {
@@ -13,8 +14,10 @@ export default function Hero3() {
           </h3>
           <p className={`${styles.subheading} ${styles.maxWHero3}`}>
             Our dedication lies in delivering an unparalleled{" "}
-            <span className="light-green">user experience</span> tailored to
-            your business needs in South Africa and globally.
+            <Link href="#ux-design" className="light-green">
+              user experience
+            </Link>{" "}
+            tailored to your business needs in South Africa and globally.
           </p>
         </div>
       </div>

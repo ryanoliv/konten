@@ -55,15 +55,18 @@ export default function BlogPost() {
             <div className="blog-text-container">
               <h2>Introduction</h2>
               <p>
-                As we dive into 2024, picking the right tools for web
-                development is more important than ever. It&apos;s not just
-                about what&apos;s popular or what everyone else is using.
-                It&apos;s about finding those special tools that let us do
-                amazing things, tools that might not be in the spotlight but
-                have the power to change how we build websites and apps. This
-                isn&apos;t about sticking to what we know. It&apos;s about
-                exploring new options that can make our work stand out and make
-                the internet a better place.
+                As we dive into 2024, picking the right tools for{" "}
+                <Link href="/web-development-cape-town" className="light-green">
+                  web development
+                </Link>{" "}
+                is more important than ever. It&apos;s not just about
+                what&apos;s popular or what everyone else is using. It&apos;s
+                about finding those special tools that let us do amazing things,
+                tools that might not be in the spotlight but have the power to
+                change how we build websites and apps. This isn&apos;t about
+                sticking to what we know. It&apos;s about exploring new options
+                that can make our work stand out and make the internet a better
+                place.
               </p>
               <p>
                 We&apos;re going to look at some of the best, most innovative
